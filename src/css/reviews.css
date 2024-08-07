@@ -38,6 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
 
     border-radius: 24px;
     padding: 32px 8px;
@@ -50,19 +51,23 @@
     display: none;
 }
 
+.reviews-subtitle-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
 .reviews-item-img {
-    margin-bottom: 24px;
     border-radius: 50%;
 }
 
 .reviews-item-subtitle {
-    margin-bottom: 8px;
-
     font-weight: 500;
     font-size: 18px;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    text-align: center;
     color: #040306;
 }
 
@@ -70,7 +75,6 @@
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: -0.02em;
-    text-align: center;
     color: rgba(4, 3, 6, 0.4);
 }
 
