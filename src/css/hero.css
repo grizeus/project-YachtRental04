@@ -1,45 +1,103 @@
 .hero {
-  background: linear-gradient(
+  background-image: linear-gradient(
       360deg,
       rgba(17, 19, 31, 0.8) 15.05%,
       rgba(17, 19, 31, 0.8) 75.3%,
       rgba(17, 19, 31, 0.8) 98.27%
     ),
-    url('path_to_image');
+    url("../images/background/background-mob-@1x.jpg");
+  padding: 260px 0 302px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      ),
+      url("../images/background/background-mob-@2x.jpg");
+  }
 }
 .hero-logo {
-  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 32px;
-
-  /* line-height: 32px; */
   line-height: 100%;
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  max-width: 335px;
 }
 .hero-dscr {
-  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 12px;
-
-  /* line-height: 14px; */
   line-height: 117%;
   text-align: center;
   color: rgba(251, 251, 251, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+  max-width: 335px;
 }
 .hero-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 32px;
+  border: none;
   border-radius: 15px;
   padding: 14px 32px;
   width: 141px;
   height: 46px;
   background: #1b414b;
-  font-family: 'Inter', sans-serif;
+  cursor: pointer;
   font-weight: 500;
   font-size: 14px;
-
-  /* line-height: 18px; */
   line-height: 129%;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      ),
+      url(../images/background/background-tab-@1x.jpg);
+    padding: 280px 0 282px;
+    max-width: 768px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      ),
+      url("../images/background/background-tab-@2x.jpg");
+  }
+  .hero-logo {
+    font-size: 70px;
+  }
 }
