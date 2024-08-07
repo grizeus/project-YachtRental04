@@ -36,7 +36,7 @@
 
     border-radius: 24px;
     padding: 32px 8px;
-    width: 335px;
+    max-width: 335px;
     background: #fbfbfb;
     padding: 32px 16px;
 }
@@ -88,7 +88,7 @@
     }
 
     .reviews-item {
-        width: 336px;
+        max-width: 336px;
     }
 
     .reviews-item:nth-child(2) {
@@ -107,7 +107,7 @@
 
     .reviews-item {
         padding: 32px 28px;
-        width: 376px;
+        max-width: 376px;
     }
 
     .reviews-item:last-child {
@@ -116,12 +116,16 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .reviews .container {
+        max-width: 1340px;
+    }
+
     .reviews-list {
         gap: 32px;
     }
 
     .reviews-item {
         padding: 32px 28px;
-        width: 392px;
+        max-width: 392px;
     }
 }
