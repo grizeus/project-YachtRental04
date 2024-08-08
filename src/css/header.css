@@ -1,6 +1,6 @@
 .header-container {
     position: absolute;
-    top: 32px;
+    top: 20px;
     left: 20px;
     right: 20px;
     border-radius: 8px;
@@ -17,6 +17,7 @@
     letter-spacing: -0.03em;
     color: #1b414b;
     padding: 12px 0;
+    line-height: 1.21;
 }
 
 .nav-list {
@@ -56,6 +57,10 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+.mobile-menu .header-container {
+    top: 16px;
 }
 
 .mobile-menu-container {
@@ -135,7 +140,7 @@
         top: 32px;
         right: 32px;
         left: 32px;
-        justify-content: baseline;
+        max-height: 48px;
     }
 
     .header-nav {
@@ -154,6 +159,7 @@
     .nav-list {
         display: flex;
         gap: 4px;
+        align-items: center;
     }
 
     .header-social-links {
@@ -179,5 +185,11 @@
 
     .header-logo {
         margin-right: 296px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-logo {
+        margin-right: 375px;
     }
 }
