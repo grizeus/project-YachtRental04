@@ -80,19 +80,20 @@
 @media screen and (min-width: 1280px) {
   .adv-container {
     flex-direction: row;
-    gap: 32px;
   }
   .adv-list-thumb {
     width: 716px;
     padding: 90px 50px;
   }
-  .adv-list {
-    gap: 44px 32px;
-  }
-  .adv-list-item {
-    width: calc((100% - 32px) / 2);
-  }
   .adv-list-item::after {
     width: 280px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .adv-list-thumb {
+    width: 768px;
+  }
+  .adv-list-item::after {
+    width: 318px;
   }
 }
