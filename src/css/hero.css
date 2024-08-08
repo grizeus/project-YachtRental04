@@ -5,7 +5,7 @@
       rgba(17, 19, 31, 0.8) 75.3%,
       rgba(17, 19, 31, 0.8) 98.27%
     ),
-    url("../images/hero/background-mob-@1x.jpg");
+    url("/images/hero/background-mob-@1x.jpg");
 
   padding: 260px 0 302px;
   min-width: 320px;
@@ -27,7 +27,7 @@
         rgba(17, 19, 31, 0.8) 75.3%,
         rgba(17, 19, 31, 0.8) 98.27%
       ),
-      url("../images/hero/background-mob-@2x.jpg");
+      url("/images/hero/background-mob-@2x.jpg");
   }
 }
 .hero-logo {
@@ -85,7 +85,7 @@
         rgba(17, 19, 31, 0.8) 75.3%,
         rgba(17, 19, 31, 0.8) 98.27%
       ),
-      url("../images/hero/background-tab-@1x.jpg");
+      url("/images/hero/background-tab-@1x.jpg");
     padding: 280px 0 282px;
     max-width: 768px;
   }
@@ -100,7 +100,7 @@
           rgba(17, 19, 31, 0.8) 75.3%,
           rgba(17, 19, 31, 0.8) 98.27%
         ),
-        url("../images/hero/background-tab-@2x.jpg");
+        url("/images/hero/background-tab-@2x.jpg");
     }
   }
   .hero-logo {
@@ -135,7 +135,7 @@
         rgba(17, 19, 31, 0.8) 75.3%,
         rgba(17, 19, 31, 0.8) 98.27%
       ),
-      url("../images/hero/backgroud-1280-@1x.jpg");
+      url("/images/hero/background-1280-@1x.jpg");
     padding: 235px 0 215px;
     max-width: 1280px;
   }
@@ -149,7 +149,7 @@
           rgba(17, 19, 31, 0.8) 75.3%,
           rgba(17, 19, 31, 0.8) 98.27%
         ),
-        url("../images/hero/background-1280-@2x.jpg");
+        url("/images/hero/background-1280-@2x.jpg");
     }
   }
   .hero-logo {
@@ -165,7 +165,7 @@
         rgba(17, 19, 31, 0.8) 75.3%,
         rgba(17, 19, 31, 0.8) 98.27%
       ),
-      url("../images/hero/backgroud-1440_@1x.jpg");
+      url("/images/hero/background-1440-@1x.jpg");
     max-width: 1440px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -178,7 +178,7 @@
           rgba(17, 19, 31, 0.8) 75.3%,
           rgba(17, 19, 31, 0.8) 98.27%
         ),
-        url("../images/hero/background_1440-@2x.jpg");
+        url("../images/hero/background-1440-@2x.jpg");
     }
   }
 }
