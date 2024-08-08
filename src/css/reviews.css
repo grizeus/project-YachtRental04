@@ -141,5 +141,6 @@
 
     .reviews-item {
         max-width: 392px;
+        padding: 32px 36px;
     }
 }
