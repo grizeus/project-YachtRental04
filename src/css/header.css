@@ -1,4 +1,6 @@
 .header-container {
+    min-width: fit-content;
+    max-width: 335px;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -136,6 +138,7 @@
 @media screen and (min-width: 768px) {
 
     .header-container {
+        max-width: 704px;
         padding: 4px 28px;
         top: 32px;
         right: 32px;
@@ -153,6 +156,10 @@
     }
 
     .menu-btn {
+        display: none;
+    }
+
+    .mobile-menu {
         display: none;
     }
 
@@ -178,6 +185,7 @@
 
 @media screen and (min-width: 1280px) {
     .header-container {
+        max-width: 1080px;
         left: 100px;
         right: 100px;
         padding: 4px 30px;
@@ -189,6 +197,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .header-container {
+        max-width: 1240px;
+    }
+
     .header-logo {
         margin-right: 375px;
     }
