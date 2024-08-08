@@ -1,0 +1,23 @@
+button {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+a {
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* Додати класс .mobile-menu-animation до DIV, який обгортае моб1льне меню. Буде регулювати непрозорість, видимість меню. */
+.mobile-menu-animation {
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Додати класс .social-link-animation до посилань на соц1альн1 мереж1. Не забути про hover.
+Або додати властивост1 до вже створеного класу. */
+.social-link-animation {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
