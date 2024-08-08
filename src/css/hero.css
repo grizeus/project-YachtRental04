@@ -130,7 +130,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url("../images/hero/background-1440-@2x.jpg");
+      background-image: url("/images/hero/background-1440-@2x.jpg");
     }
   }
 }
