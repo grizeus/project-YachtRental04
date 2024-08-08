@@ -9,7 +9,6 @@
 .adv-list-thumb {
   background-color: #1b414b;
   border-radius: 24px;
-  width: 335px;
   min-height: 642px;
   padding: 80px 20px;
 }
@@ -20,7 +19,7 @@
 }
 .adv-list-item {
   position: relative;
-  width: 295px;
+  width: 100%;
 }
 .adv-list-item::after {
   position: absolute;
@@ -28,7 +27,7 @@
   top: 46px;
   left: 0;
   border-radius: 18px;
-  width: 295px;
+  width: 100%;
   border: 1px solid rgba(251, 251, 251, 0.1);
 }
 .adv-item-number {
@@ -47,7 +46,6 @@
   opacity: 0.8;
 }
 .adv-img-thumb {
-  min-width: 335px;
   overflow: hidden;
   border-radius: 24px;
 }
