@@ -6,6 +6,7 @@
       rgba(17, 19, 31, 0.8) 98.27%
     ),
     url("../images/hero/background-mob-@1x.jpg");
+
   padding: 260px 0 302px;
   min-width: 320px;
   max-width: 375px;
@@ -63,12 +64,18 @@
   width: 141px;
   height: 46px;
   background: #1b414b;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
 }
 @media (min-width: 768px) {
   .hero {
