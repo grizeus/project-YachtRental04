@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project-YachtRental04/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-YachtRental04/assets/index-8da9c190.css">
+    <link rel="stylesheet" href="/project-YachtRental04/assets/index-2e47e386.css">
   </head>
   <body>
     <header>
@@ -227,12 +227,29 @@
     </h2>
     <ul class="yachts-list">
       <li class="yachts-item">
-        <img
-          class="yacht-photo"
-          srcset="./images/our yahts/arrow@1x.jpg 1x, ./images/our yahts/arrow@2x.jpg 2x"
-          src="/project-YachtRental04/assets/arrow-dcecefe1.jpg"
-          alt="Arrow yacht"
-        />
+        <picture>
+          <source
+            srcset="/project-YachtRental04/assets/14-img-yacht@1x-min-c71849fa.jpg 1x, /project-YachtRental04/assets/14-img-yacht@2x-min-3ab59095.jpg 2x"
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="/project-YachtRental04/assets/13-img-yacht@1x-min-2f590f5f.jpg 1x, /project-YachtRental04/assets/13-img-yacht@2x-min-02973eba.jpg 2x"
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="/project-YachtRental04/assets/12-img-yacht@1x-min-ec64fa9d.jpg 1x, /project-YachtRental04/assets/12-img-yacht@1x-min-ec64fa9d.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="/project-YachtRental04/assets/11-img-yacht@1x-min-bf18db5d.jpg 1x, /project-YachtRental04/assets/11-img-yacht@2x-min-f4174d45.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <img
+            class="yacht-photo"
+            src="/project-YachtRental04/assets/14-img-yacht@1x-min-c71849fa.jpg"
+            alt="yacht"
+          />
+        </picture>
         <div class="yacht-description">
           <h3 class="yacht-name">Arrow</h3>
           <p class="yacht-type">LUXURY YAHTS</p>
@@ -240,34 +257,47 @@
         <hr class="specs-separator" />
         <div class="yacht-specs">
           <div class="yacht-spec">
-            <dt>LENGTH</dt>
-            <dd>48m(155ft)</dd>
+            <p class="options">LENGTH</p>
+            <p class="parameter">48m(155ft)</p>
           </div>
           <div class="yacht-spec">
-            <dt>BUILDER</dt>
-            <dd>Admiral</dd>
+            <p class="options">BUILDER</p>
+            <p class="parameter">Admiral</p>
           </div>
           <div class="yacht-spec">
-            <dt>BUILT</dt>
-            <dd>2021</dd>
+            <p class="options">BUILT</p>
+            <p class="parameter">2021</p>
           </div>
           <div class="yacht-spec">
-            <dt>GUESTS</dt>
-            <dd>11 in 5 cabins</dd>
+            <p class="options">GUESTS</p>
+            <p class="parameter">11 in 5 cabins</p>
           </div>
           <div class="yacht-spec">
-            <dt>PRICE</dt>
-            <dd>€33,500,000</dd>
+            <p class="options">PRICE</p>
+            <p class="parameter">€33,500,000</p>
           </div>
         </div>
       </li>
       <li class="yachts-item">
-        <img
-          class="yacht-photo"
-          srcset="./images/our yahts/benetti@1x.jpg 1x, ./images/our yahts/benetti@2x.jpg 2x"
-          src="/project-YachtRental04/assets/benetti-0aa5e020.jpg"
-          alt="Benetti Oasis"
-        />
+        <picture>
+          <source
+            srcset="/project-YachtRental04/assets/22-img-yacht@1x-min-bd999d74.jpg 1x, /project-YachtRental04/assets/22-img-yacht@1x-min-bd999d74.jpg 2x"
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="/project-YachtRental04/assets/21-img-yacht@1x-min-8f3596e5.jpg 1x, /project-YachtRental04/assets/21-img-yacht@1x-min-8f3596e5.jpg 2x"
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="/project-YachtRental04/assets/20-img-yacht@1x-min-adaf46fd.jpg 1x, /project-YachtRental04/assets/20-img-yacht@1x-min-adaf46fd.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <img
+            class="yacht-photo"
+            src="/project-YachtRental04/assets/20-img-yacht@1x-min-adaf46fd.jpg"
+            alt="yacht"
+          />
+        </picture>
         <div class="yacht-description">
           <h3 class="yacht-name">BENETTI OASIS 40M BO122</h3>
           <p class="yacht-type">LUXURY YAHTS</p>
@@ -275,34 +305,43 @@
         <hr class="specs-separator" />
         <div class="yacht-specs">
           <div class="yacht-spec">
-            <dt>LENGTH</dt>
-            <dd>41m (133ft)</dd>
+            <p class="options">LENGTH</p>
+            <p class="parameter">41m (133ft)</p>
           </div>
           <div class="yacht-spec">
-            <dt>SHIPYARD</dt>
-            <dd>Benetti</dd>
+            <p class="options">SHIPYARD</p>
+            <p class="parameter">Benetti</p>
           </div>
           <div class="yacht-spec">
-            <dt>BUILT</dt>
-            <dd>2025</dd>
+            <p class="options">BUILT</p>
+            <p class="parameter">2025</p>
           </div>
           <div class="yacht-spec">
-            <dt>GUESTS</dt>
-            <dd>10 in 5 cabins</dd>
+            <p class="options">GUESTS</p>
+            <p class="parameter">10 in 5 cabins</p>
           </div>
           <div class="yacht-spec">
-            <dt>PRICE</dt>
-            <dd>€23,210,000</dd>
+            <p class="options">PRICE</p>
+            <p class="parameter">€23,210,000</p>
           </div>
         </div>
       </li>
       <li class="yachts-item">
-        <img
-          class="yacht-photo"
-          srcset="./images/our yahts/belleanne@1x.jpg 1x, ./images/our yahts/belleanne@2x.jpg 2x"
-          src="/project-YachtRental04/assets/belleanne-479d0f39.jpg"
-          alt="Benetti Oasis"
-        />
+        <picture>
+          <source
+            srcset="/project-YachtRental04/assets/31-img-yacht@1x-min-f04ca888.jpg 1x, /project-YachtRental04/assets/31-img-yacht@2x-min-d6de1a57.jpg 2x"
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="/project-YachtRental04/assets/30-img-yacht@1x-min-d771919f.jpg 1x, /project-YachtRental04/assets/30-img-yacht@2x-min-b9e75468.jpg 2x"
+            media="(min-width:1280px)"
+          />
+          <img
+            class="yacht-photo"
+            src="/project-YachtRental04/assets/30-img-yacht@1x-min-d771919f.jpg"
+            alt="yacht"
+          />
+        </picture>
         <div class="yacht-description">
           <h3 class="yacht-name">BELLE ANNA</h3>
           <p class="yacht-type">LUXURY YAHTS</p>
@@ -310,24 +349,24 @@
         <hr class="specs-separator" />
         <div class="yacht-specs">
           <div class="yacht-spec">
-            <dt>LENGTH</dt>
-            <dd>50m(155ft)</dd>
+            <p class="options">LENGTH</p>
+            <p class="parameter">50m(155ft)</p>
           </div>
           <div class="yacht-spec">
-            <dt>SHIPYARD</dt>
-            <dd>ISA</dd>
+            <p class="options">SHIPYARD</p>
+            <p class="parameter">ISA</p>
           </div>
           <div class="yacht-spec">
-            <dt>BUILT</dt>
-            <dd>2012</dd>
+            <p class="options">BUILT</p>
+            <p class="parameter">2012</p>
           </div>
           <div class="yacht-spec">
-            <dt>GUESTS</dt>
-            <dd>12 in 6 cabins</dd>
+            <p class="options">GUESTS</p>
+            <p class="parameter">12 in 6 cabins</p>
           </div>
           <div class="yacht-spec">
-            <dt>PRICE</dt>
-            <dd>€21,000,000</dd>
+            <p class="options">PRICE</p>
+            <p class="parameter">€21,000,000</p>
           </div>
         </div>
       </li>
