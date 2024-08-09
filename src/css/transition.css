@@ -21,3 +21,10 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+/* Додати класс .form-input-animation до . Не забути про hover.
+Або додати властивост1 до вже створеного класу. */
+.form-input-animation {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
