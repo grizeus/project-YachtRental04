@@ -198,8 +198,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+    
     .header-container {
-        max-width: 1240px;
+        width: 1240px;
     }
 
     .header-logo {
