@@ -1,4 +1,8 @@
 /* About us */
+.about-us {
+  margin-top: -59px;
+  padding-bottom: 40px;
+}
 .about-us .container {
   min-width: 320px;
   max-width: 375px;
@@ -49,13 +53,17 @@
   width: 335px;
 }
 @media screen and (min-width: 768px) {
+  .about-us {
+    margin-top: -67px;
+    padding-bottom: 75px;
+  }
   .about-us-bg-img {
     max-width: 768px;
     height: 470px;
   }
   .about-us-img {
     width: 704px;
-    height:470px;
+    height: 470px;
   }
   .about-us .container {
     max-width: 768px;
@@ -81,6 +89,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .about-us {
+    margin-top: -35px;
+  }
   .about-us-bg-img {
     max-width: 1220px;
   }
