@@ -1,18 +1,16 @@
 /* Our yachts */
 .section-title {
-  width: 319px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
-  padding-bottom: 40px;
-  margin: 0 auto;
+  margin: 0 8px 40px;
 }
 
 .yachts-list {
-  width: 335px;
+  width: 100%;
   height: 478px;
   display: flex;
   flex-direction: row;
@@ -22,10 +20,11 @@
 }
 
 .yachts-item {
+  width: 100%;
   background-color: #fbfbfb;
   border-radius: 24px;
   padding: 16px 16px 32px;
-  flex: 0 0 335px;
+  flex: 0 1 335px;
 }
 
 .yacht-photo {
@@ -41,13 +40,12 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 270px;
   height: 17px;
-  margin: 0 auto 15px;
+  margin: 0 16px 15px;
 }
 
 .yacht-name {
-  width: 147px;
+  width: 55%;
   overflow: hidden;
   text-wrap: nowrap;
   text-overflow: ellipsis;
@@ -72,19 +70,17 @@
 }
 
 .specs-separator {
-  width: 272px;
   border: none;
   background-color: #04030620;
   height: 1px;
-  margin: 0 auto;
+  margin: 0 16px;
 }
 
 .yacht-specs {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: 270px;
-  margin: 16px auto 0;
+  margin: 16px 16px 0;
 }
 
 .yacht-spec {
@@ -146,7 +142,7 @@
   .section-title {
     width: 645px;
     font-size: 48px;
-    padding-bottom: 75px;
+    margin: 0 auto 75px;
   }
 
   .yachts-list {
@@ -179,13 +175,6 @@
     width: 103px;
   }
 
-  .specs-separator {
-    width: 272px;
-  }
-  .yacht-specs {
-    width: 272px;
-  }
-
   .yacht-rental {
     width: 179px;
     height: 52px;
@@ -196,6 +185,7 @@
 @media screen and (min-width: 1280px) {
   .section-title {
     width: 645px;
+    margin: 0 auto 75px;
   }
 
   .yachts-list {
@@ -214,16 +204,13 @@
   .specs-separator {
     width: 313px;
   }
-
-  .yacht-specs {
-    width: 313px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
   .section-title {
     width: 714px;
     font-size: 48px;
+    margin: 0 auto 63px;
   }
 
   .yachts-list {
@@ -241,14 +228,6 @@
   }
 
   .yacht-description {
-    width: 328px;
-  }
-
-  .specs-separator {
-    width: 328px;
-  }
-
-  .yacht-specs {
     width: 328px;
   }
 }
