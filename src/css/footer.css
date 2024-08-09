@@ -1,17 +1,14 @@
-/* Footer */
 .page-footer {
-  background-color: #1b414b;
-  max-width: 355px;
+  max-width: 375px;
   min-width: 320px;
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
-  border-radius: 24px 24px 0 0;
-  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 40px auto 0;
 }
 
 .footer-container {
-  /* max-width: 355px; */
-  /* min-width: 320px; */
+  background-color: #1b414b;
+  border-radius: 24px 24px 0 0;
   padding: 40px 30px 20px;
   margin: 0 auto;
 }
@@ -22,9 +19,9 @@
 
 .footer-nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 37px;
   margin-bottom: 80px;
-  /* gap: 37px; */
 }
 
 .footer-nav-logo {
@@ -36,7 +33,7 @@
 
 .footer-nav-list {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 4px;
 }
 
@@ -80,6 +77,7 @@
   display: flex;
   gap: 8px;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-soc-item {
@@ -139,11 +137,13 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    max-width: 736px;
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 75px auto 0;
   }
 
   .footer-container {
-    max-width: none;
     padding: 50px 48px 20px;
     margin: 0 auto;
   }
@@ -168,7 +168,7 @@
 
   .footer-soc-list {
     margin-bottom: 0;
-    margin-left: 91px;
+    margin-left: auto;
     align-items: start;
     justify-content: center;
   }
@@ -178,8 +178,8 @@
   }
 
   .footer-main-text {
-    font-size: 34px;
-    max-width: 640px;
+    font-size: 32px;
+    max-width: 600px;
     margin-bottom: 99px;
   }
 
@@ -194,7 +194,9 @@
 
 @media screen and (min-width: 1280px) {
   .page-footer {
-    max-width: 1230px;
+    max-width: 1280px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .footer-container {
@@ -207,17 +209,17 @@
   }
 
   .footer-soc-list {
-    margin-left: 311px;
+    margin-left: auto;
   }
 
   .footer-main-text {
-    max-width: 693px;
+    max-width: 640px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .page-footer {
-    max-width: 1390px;
+    max-width: 1440px;
   }
 
   .footer-nav {
@@ -226,9 +228,5 @@
 
   .footer-soc-list {
     margin-left: auto;
-  }
-
-  .footer-main-text {
-    max-width: 699px;
   }
 }
