@@ -19,11 +19,10 @@
 }
 
 .yachts-item {
-  width: 100%;
+  max-width: 335px;
   background-color: #fbfbfb;
   border-radius: 24px;
   padding: 16px 16px 32px;
-  flex: 0 1 335px;
 }
 
 .yacht-photo {
@@ -92,7 +91,7 @@
   letter-spacing: 0.03em;
 }
 
-.yacht-spec dt {
+.yacht-spec .options {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.18;
@@ -103,7 +102,7 @@
   text-wrap: nowrap;
 }
 
-.yacht-spec dd {
+.yacht-spec .parameter {
   color: #040306;
   margin-inline-start: 0;
   width: 94px;
@@ -153,7 +152,7 @@
   }
 
   .yachts-item {
-    flex: 0 0 336px;
+    max-width: 336px;
   }
 
   .yacht-photo {
@@ -200,7 +199,7 @@
   }
 
   .yachts-item {
-    flex: 0 0 377px;
+    max-width: 377px;
   }
 
   .yacht-description {
@@ -225,7 +224,7 @@
   }
 
   .yachts-item {
-    flex: 0 0 392px;
+    max-width: 392px;
   }
 
   .yacht-name {
