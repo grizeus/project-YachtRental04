@@ -19,7 +19,8 @@
 
 .footer-nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 37px;
   margin-bottom: 80px;
 }
 
@@ -32,6 +33,7 @@
 
 .footer-nav-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 
