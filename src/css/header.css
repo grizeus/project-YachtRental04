@@ -112,6 +112,7 @@
 .nav-link-container {
     padding: 15px 24px;
     height: 40px;
+    width: 91px;
     background-color: rgba(27, 65, 75, 0.5);
     border-radius: 8px;
 }
