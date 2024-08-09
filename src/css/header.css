@@ -115,6 +115,8 @@
     width: 91px;
     background-color: rgba(27, 65, 75, 0.5);
     border-radius: 8px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link-container:focus, .nav-link-container:hover, .nav-link-container:active {
@@ -153,7 +155,7 @@
 
     .header-logo {
         font-size: 20px;
-        margin-right: 109px;
+        margin-right: 113px;
     }
 
     .menu-btn {
@@ -177,6 +179,7 @@
 
     .header-social-icon {
         fill: #1B414B;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .header-social-icon:hover, .header-social-icon:focus, .header-social-icon:active {
