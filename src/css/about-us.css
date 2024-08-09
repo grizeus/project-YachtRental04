@@ -6,8 +6,9 @@
 }
 .about-us-border-container {
   border-radius: 24px;
-  background-color: #fbfbfb;
+  background:linear-gradient(#fbfbfb 60%, #0e1823 0%);;
   overflow: hidden;
+  border: 1px solid #0e1823;
 }
 .about-us-header {
   font-size: 28px;
