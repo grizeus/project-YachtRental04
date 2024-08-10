@@ -21,7 +21,7 @@
   line-height: 1;
   letter-spacing: normal;
   color: #1b414b;
-  margin: 40px 20px;
+  padding: 40px 20px;
 }
 .about-us-text-block .top-text {
   font-size: 18px;
@@ -29,7 +29,7 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: #1b414b;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .about-us-text-block .bottom-text {
   font-size: 12px;
@@ -40,7 +40,7 @@
   opacity: 0.4;
 }
 .about-us-text-block {
-  margin: 40px 20px;
+  padding: 0 20px 40px;
 }
 .about-us-bg-img {
   max-width: 375px;
@@ -63,21 +63,22 @@
   }
   .about-us-img {
     width: 704px;
-    height:470px;
+    height: 470px;
   }
   .about-us .container {
     max-width: 768px;
     padding: 0 32px;
   }
+
   .about-us-header {
     max-width: 536px;
     font-size: 48px;
-    margin: 50px 32px;
+    padding: 50px 32px;
     letter-spacing: -0.02em;
   }
   .about-us-text-block {
     max-width: 389px;
-    margin: 50px 32px;
+    padding: 0 32px 50px;
   }
   .about-us-text-block .top-text {
     font-size: 23px;
@@ -103,11 +104,11 @@
     padding: 0 50px;
   }
   .about-us-header {
-    margin: 0;
+    padding: 0;
   }
   .about-us-text-block {
     max-width: 353px;
-    margin: 0;
+    padding: 0;
   }
   .about-us-text-block .top-text {
     letter-spacing: normal;
@@ -116,7 +117,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 50px 100px;
+    padding: 50px 50px 100px;
   }
 }
 @media screen and (min-width: 1440px) {
