@@ -7,6 +7,11 @@
   color: #fbfbfb;
   margin-bottom: 40px;
 }
+
+.rent-title-form-container {
+  margin-bottom: 80px;
+}
+
 .rent-input {
   width: 100%;
   height: 42px;
@@ -22,6 +27,7 @@
     font-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .rent-input:hover,
 .rent-input:focus {
   border: 1px solid rgba(251, 251, 251, 0.5);
@@ -39,12 +45,14 @@
     line-height 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .rent-input:hover::placeholder,
 .rent-input:focus::placeholder {
   font-size: 14px;
   line-height: 1.28px;
   color: #fbfbfb;
 }
+
 .rent-comment {
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
@@ -58,6 +66,7 @@
     outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 40px;
 }
+
 .rent-comment:hover,
 .rent-comment:focus {
   border: 1px solid rgba(251, 251, 251, 0.5);
@@ -77,12 +86,12 @@
 .rent-comment:focus::placeholder {
   color: #fbfbfb;
 }
+
 .rent-btn {
   border-radius: 15px;
   padding: 14px 44px;
   background-color: #1b414b;
   border: none;
-  margin-bottom: 80px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
@@ -91,17 +100,20 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .rent-btn:hover,
 .rent-btn:focus {
   background-color: #fbfbfb;
   color: #1b414b;
 }
+
 .rent-image {
   position: relative;
   overflow: hidden;
   border-radius: 24px;
   border: none;
 }
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .rent-section-container {
@@ -109,39 +121,50 @@
     flex-direction: column;
     justify-content: center;
   }
+
   .rent-title {
     padding-left: 116px;
     padding-right: 115px;
     font-size: 28px;
     margin-bottom: 50px;
   }
+
   .rent-form {
     padding-left: 116px;
     padding-right: 115px;
   }
+
   .rent-input {
     font-size: 14px;
     height: 42px;
   }
+
   .rent-input::placeholder {
     font-size: 14px;
     line-height: 1.28;
   }
+
   .rent-comment {
     height: 116px;
     margin-bottom: 50px;
   }
+
   .rent-comment::placeholder {
     font-size: 14px;
     line-height: 1.28;
   }
+
+  .rent-title-form-container {
+    margin-bottom: 100px;
+  }
+
   .rent-btn {
     padding: 18px 75px;
     font-size: 18px;
     line-height: 1.1;
-    margin-bottom: 100px;
   }
 }
+
 /* Desktop_1280px */
 @media screen and (min-width: 1280px) {
   .rent-section-container {
@@ -156,21 +179,22 @@
     padding-right: 0;
     font-size: 48px;
   }
+
   .rent-form {
     padding-left: 0;
     padding-right: 0;
     max-width: 472px;
   }
+
   .rent-input {
     height: 54px;
   }
-  .rent-btn {
+
+  .rent-title-form-container {
     margin-bottom: 0;
   }
+
   .rent-image {
     min-height: 536px;
   }
-}
-/* Desktop 1440px */
-@media screen and (min-width: 1440px) {
 }
