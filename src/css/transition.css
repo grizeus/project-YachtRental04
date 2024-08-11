@@ -1,0 +1,66 @@
+.mobile-menu-transition {
+  transition-property: opacity, visibility;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+.nav-link-container {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.mobile-social-icon {
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.footer-soc-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.footer-nav-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.footer-nav-item {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.hero-btn,
+.yacht-rental,
+.rent-btn {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rent-input {
+  transition-property: border, color, font-size, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.rent-input::placeholder {
+  transition-property: font-size, line-height, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.rent-comment {
+  transition-property: border, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.rent-comment::placeholder {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header-social-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+}
