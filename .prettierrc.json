@@ -1,4 +1,5 @@
 {
+  "parser": "html",
   "printWidth": 80,
   "useTabs": false,
   "semi": true,

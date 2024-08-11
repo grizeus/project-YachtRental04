@@ -70,13 +70,14 @@
         </a>
       </li>
     </ul>
-    <button type="button" class="menu-btn" aria-label="Open Menu">
+    <button type="button" class="menu-btn js-open-menu" aria-expanded="false"
+    aria-controls="mobile-menu" >
       <svg class="menu-icon" height="28" width="28" data-menu-open>
         <use href="/images/symbol-defs.svg#icon-menu-duo-lg" />
       </svg>
     </button>
   </div>
-  <div class="mobile-menu" data-menu>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
     <div class="mobile-menu-container">
       <div class="container header-container">
         <a
@@ -85,8 +86,8 @@
           aria-label="Go to Homepage"
           >yachtjet</a
         >
-        <button type="button" class="close-btn" aria-label="Close menu">
-          <svg class="close-icon" width="16" height="16" data-menu-close>
+        <button type="button" class="close-btn js-close-menu">
+          <svg class="close-icon" width="16" height="16">
             <use href="/images/symbol-defs.svg#icon-close-sharp" />
           </svg>
         </button>
