@@ -19,7 +19,6 @@
 
 .footer-nav {
   display: flex;
-  /* justify-content: space-between; */
   gap: 37px;
   margin-bottom: 80px;
 }
@@ -133,6 +132,27 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: rgba(251, 251, 251, 0.4);
+}
+
+@media (max-width: 372px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .footer-nav-logo {
+    text-align: center;
+  }
+
+  .footer-nav-list {
+    justify-content: center;
+  }
+
+  .footer-text-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (min-width: 768px) {
