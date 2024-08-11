@@ -112,23 +112,16 @@
 }
 
 .yacht-rental {
-  display: block;
   border: 1px solid rgba(251, 251, 251, 0.35);
-  border-radius: 15px;
   width: 141px;
   height: 46px;
   margin-left: auto;
   margin-right: auto;
   padding: 14px 32px;
-
   background-color: transparent;
-
-  font-weight: 500;
   font-size: 13px;
   line-height: 1;
-  letter-spacing: -0.02em;
   color: #fbfbfb;
-  cursor: pointer;
 }
 
 .yacht-rental:hover,

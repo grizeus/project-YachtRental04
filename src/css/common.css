@@ -44,6 +44,45 @@ body {
   margin: 0 auto;
 }
 
+.main-btn {
+  display: block;
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  background-color: #1b414b;
+  cursor: pointer;
+}
+
+.form-element {
+  width: 100%;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 18px;
+  background-color: transparent;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.form-element:hover,
+.form-element:focus {
+  border: 1px solid rgba(251, 251, 251, 0.5);
+  outline: none;
+  color: #fbfbfb;
+}
+
+.form-element::placeholder {
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.form-element:hover::placeholder,
+.form-element:focus::placeholder {
+  color: #fbfbfb;
+}
+
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
