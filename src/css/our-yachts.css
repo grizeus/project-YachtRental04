@@ -25,12 +25,25 @@
   padding: 16px 16px 32px;
 }
 
-.yacht-photo {
+/* .yacht-photo {
   border-radius: 24px;
   height: 240px;
   margin-bottom: 32px;
   object-fit: cover;
   background-position: center;
+} */
+
+.yacht-photo-wrapper {
+  border-radius: 24px;
+  height: 240px;
+  margin-bottom: 32px;
+  object-fit: cover;
+  background-position: center;
+  max-width: 375px;
+  min-width: 280px;
+  border-radius: 24px;
+  overflow: hidden;
+  /* background-color: #0e1823; */
 }
 
 .yacht-description {
@@ -149,9 +162,9 @@
     max-width: 336px;
   }
 
-  .yacht-photo {
+  /* .yacht-photo {
     height: 268px;
-  }
+  } */
 
   .yacht-description {
     width: 272px;
