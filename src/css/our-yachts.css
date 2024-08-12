@@ -1,12 +1,5 @@
 /* Our yachts */
 
-.our-yachts container {
-  min-width: 320px;
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .section-title {
   font-weight: 500;
   font-size: 28px;
@@ -130,6 +123,7 @@
   width: 141px;
   height: 46px;
   margin-left: auto;
+  white-space: nowrap;
   margin-right: auto;
   padding: 14px 32px;
   background-color: transparent;
@@ -222,6 +216,7 @@
   .yachts-list {
     width: 1181px;
     gap: 25px;
+    overflow-x: unset;
   }
 
   .yachts-item {
