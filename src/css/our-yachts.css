@@ -117,10 +117,11 @@
   height: 46px;
   margin-left: auto;
   margin-right: auto;
-  padding: 14px 32px;
+  padding: 14px 0;
+  text-align: center;
   background-color: transparent;
   font-size: 13px;
-  line-height: 1;
+  line-height: 1.28;
   color: #fbfbfb;
 }
 
@@ -169,10 +170,11 @@
   }
 
   .yacht-rental {
-    padding: 16px 40px;
+    padding: 16px 0;
     width: 179px;
     height: 52px;
     font-size: 18px;
+    line-height: 1;
   }
 }
 
