@@ -1,6 +1,13 @@
+<div align="center">
+    <img src="./assets/webocto_logo.jpg">
+</div>
+<div align="center">
+
 # YachtJet by WebOctopus
 
-A one-page website for renting yachts built using plain HTML, CSS, and JavaScript with [Vite](https://vitejs.dev/) as a build tool.
+</div>
+
+### A one-page website for renting yachts built using plain HTML, CSS, and JavaScript with [Vite](https://vitejs.dev/) as a build tool.
 
 ## Features
 
@@ -25,15 +32,55 @@ A one-page website for renting yachts built using plain HTML, CSS, and JavaScrip
     git clone https://github.com/grizeus/project-YachtRental04
     ```
 2. Open the project in your preferred code editor
-3. Install dependencies: 
+3. Install dependencies for your preferred package manager:
     ### npm:
-    `npm install --save` or `npm i --save`
+    ```
+    npm install --save
+    npm run dev
+    ```
+    or 
+    ```
+    npm i --save
+    npm run dev
+    ```
+    (you can also ommit `--save` flag)
 
     ### bun:
-    `bun install --save` or `bun i --save`
+    ```
+    bun install --save
+    bun run dev
+    ```
+    or 
+    ```
+    bun i --save
+    bun run dev
+    ```
+    (you can also ommit `--save` flag)
+
+    ## pnpm:
+    ```
+    pnpm install
+    npm run dev
+    ```
+
+    ## yarn:
+    ```
+    yarn
+    yarn run
+    ```
 ## Credits
 
 **Team members** : 
-* Team leader: [insert name]
-* Scrum master: [insert name]
-* Project supervisor: [insert name]
+* Team leader: [Petro Zaitsev](https://github.com/grizeus)
+* Scrum master: [Khrystyna Srorozhuk](https://github.com/kris9899)
+* Developers: 
+  * [Petro Zaitsev](https://github.com/grizeus), orchestrator and team leader.
+  * [Khrystyna Srorozhuk](https://github.com/kris9899), scrum master, meating supervisor, section "Hero".
+  * [Sofiia Ihnatieva](https://github.com/sonja-plgdd), section "Header" and mobile menu.
+  * [Yaroslavna Yermolenko](https://github.com/YaroslavnaYermolenko), section "About Us".
+  * [Anna Bryzghalova](https://github.com/AnnaBryzghalova), section "Our Yachts".
+  * [Yelyzaveta Apostol](https://github.com/llizzokk), section "Advantages", mobile menu logic.
+  * [Hanna Tarasenko](https://github.com/Hanna-Tarasenko), section "Rent a Yacht".
+  * [Pavlo Chernichenko](https://github.com/oykss), section "Reviews".
+  * [Borys Ziukov](https://github.com/ziukoff1985), section "Footer".
+  * [Yevhen Onipchenko](https://github.com/id753), svg optimization, CSS transitions and animations, mobile menu logic.
