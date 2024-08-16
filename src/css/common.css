@@ -1,5 +1,33 @@
 html {
   scroll-behavior: smooth;
+  @supports (-moz-appearance: none) {
+    scrollbar-width: normal;
+    scrollbar-color: #575455 #374151;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+
+html::-webkit-scrollbar-track {
+  background-color: #0e1823aa;
+  transition: background-color 0.2s ease-in-out;
+}
+
+html::-webkit-scrollbar-track:hover {
+  background-color: #0e1823;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #fbfbfb;
+  border-radius: 8px;
+  transition: width 0.2s ease-in-out;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  width: 1vw;
 }
 
 body {
@@ -10,11 +38,18 @@ body {
   color: #fff;
   background-color: #0e1823;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  @supports (text-size-adjust: 100%) {
+    text-size-adjust: 100%; 
+  }
+  @supports (text-size-adjust: 100%) {
+    text-size-adjust: 100%;
+  }
+  @supports (font-synthesis: none) {
+    font-synthesis: none;
+  }
 }
 
 .visually-hidden {
