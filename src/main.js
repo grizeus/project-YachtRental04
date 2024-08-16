@@ -1,3 +1,1 @@
-import { modalHandler } from "./js/mobile-menu";
-
-modalHandler();
+import mobileMenuHandler from "./js/mobile-menu";

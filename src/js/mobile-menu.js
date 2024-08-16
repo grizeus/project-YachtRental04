@@ -1,41 +1,69 @@
-export function modalHandler() {
-  const mobileMenu = document.querySelector(".js-menu-container");
-  const openMenuBtn = document.querySelector(".js-open-menu");
-  const closeMenuBtn = document.querySelector(".js-close-menu");
+"use strict";
+
+export default (() => {
+  const openMenuBtn = document.querySelector(".menu-btn");
+  const closeMenuBtn = document.querySelector(".close-btn");
+  const mobMenu = document.querySelector(".mobile-menu");
+
+  if (!openMenuBtn || !closeMenuBtn || !mobMenu) {
+    console.warn("Mobile menu elements not found");
+    return;
+  }
+
+  const preventTouchMove = e => {
+    e.preventDefault();
+  };
+
+  const addTouchMoveListener = () => {
+    document.body.addEventListener("touchmove", preventTouchMove, {
+      passive: false,
+    });
+  };
+
+  const removeTouchMoveListener = () => {
+    document.body.removeEventListener("touchmove", preventTouchMove, {
+      passive: false,
+    });
+  };
 
   const toggleMenu = () => {
-    const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
-    const isMenuOpen =
-      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true";
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
-    mobileMenu.classList.toggle("is-open");
+    mobMenu.classList.toggle("is-open");
 
-    const scrollLockMethod = !isMenuOpen
-      ? "disableBodyScroll"
-      : "enableBodyScroll";
-    bodyScrollLock[scrollLockMethod](document.body);
-
-    if (anchors.length === 0) return;
+    document.body.style.overflow = isMenuOpen ? "" : "hidden";
+    mobMenu.style.overflow = "auto";
 
     if (!isMenuOpen) {
-      anchors.forEach(anchor => {
-        anchor.addEventListener("click", toggleMenu);
-      });
-      return;
+      addTouchMoveListener();
+    } else {
+      removeTouchMoveListener();
     }
 
-    anchors.forEach(anchor => {
-      anchor.removeEventListener("click", toggleMenu);
+    const menuAnchors = mobMenu.querySelectorAll("a.mobile-nav-link");
+    menuAnchors.forEach(anchor => {
+      if (!isMenuOpen) {
+        anchor.addEventListener("click", toggleMenu);
+      } else {
+        anchor.removeEventListener("click", toggleMenu);
+      }
     });
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
   closeMenuBtn.addEventListener("click", toggleMenu);
 
-  window.matchMedia("(min-width: 375px)").addEventListener("change", e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove("is-open");
-    openMenuBtn.setAttribute("aria-expanded", false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
-}
+  const mediaQuery = window.matchMedia("(max-width: 767px)");
+  const queryHandler = e => {
+    if (!e.matches && mobMenu.classList.contains("is-open")) {
+      toggleMenu();
+    }
+  };
+  mediaQuery.addEventListener("change", queryHandler);
+
+  if (mobMenu.classList.contains("is-open")) {
+    addTouchMoveListener();
+  } else {
+    removeTouchMoveListener();
+  }
+})();
