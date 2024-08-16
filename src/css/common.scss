@@ -1,20 +1,62 @@
+$midnight-blue: #040306;
+$slate-blue: #0e1823;
+$dark-cyan: #1b414b;
+$ivory-white: #fbfbfb;
+$ivory-white-50: #fbfbfb80;
+$ivory-white-20: #fbfbfb33;
+$ivory-white-40: #fbfbfb66;
+
 html {
   scroll-behavior: smooth;
+  @supports (-moz-appearance: none) {
+    scrollbar-width: normal;
+    scrollbar-color: #575455 #374151;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+
+html::-webkit-scrollbar-track {
+  background-color: #0e1823aa;
+  transition: background-color 0.2s ease-in-out;
+}
+
+html::-webkit-scrollbar-track:hover {
+  background-color: $slate-blue;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: $ivory-white;
+  border-radius: 8px;
+  transition: width 0.2s ease-in-out;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  width: 1vw;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 100%;
   font-weight: 400;
-
   color: #fff;
-  background-color: #0e1823;
-
-  font-synthesis: none;
+  background-color: $slate-blue;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+
+  @supports (text-size-adjust: 100%) {
+    text-size-adjust: 100%; 
+  }
+  @supports (text-size-adjust: 100%) {
+    text-size-adjust: 100%;
+  }
+  @supports (font-synthesis: none) {
+    font-synthesis: none;
+  }
 }
 
 .visually-hidden {
@@ -52,36 +94,35 @@ body {
   font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: #fbfbfb;
-  background-color: #1b414b;
+  color: $ivory-white;
+  background-color: $dark-cyan;
   cursor: pointer;
 }
 
 .form-element {
   width: 100%;
-  border: 1px solid rgba(251, 251, 251, 0.2);
+  border: 1px solid $ivory-white-20;
   border-radius: 12px;
   padding: 18px;
   background-color: transparent;
-  color: rgba(251, 251, 251, 0.4);
+  color: $ivory-white-40;
 }
 
 .form-element:hover,
 .form-element:focus {
-  border: 1px solid rgba(251, 251, 251, 0.5);
+  border: 1px solid $ivory-white-50;
   outline: none;
-  color: #fbfbfb;
+  color: $ivory-white;
 }
 
 .form-element::placeholder {
-  color: rgba(251, 251, 251, 0.4);
+  color: $ivory-white-40;
 }
 
 .form-element:hover::placeholder,
 .form-element:focus::placeholder {
-  color: #fbfbfb;
+  color: $ivory-white;
 }
-
 
 @media (min-width: 768px) {
   .container {
