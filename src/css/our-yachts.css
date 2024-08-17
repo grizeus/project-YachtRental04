@@ -33,6 +33,15 @@
   background-color: hsl(182 37% 56% / 0.1);
 }
 
+.yachts-list::-webkit-scrollbar-thumb {
+  background-color: hsla(181, 44%, 78%, 0.295);
+}
+
+.yachts-list::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(181, 62%, 80%, 0.486);
+}
+
+
 .yachts-item {
   scroll-snap-align: start;
   min-width: 280px;
