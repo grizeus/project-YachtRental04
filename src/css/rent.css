@@ -18,6 +18,36 @@
   font-size: 12px;
 }
 
+.rent-phone-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.phone-helper-popup {
+  position: absolute;
+  background-color: #ffdddd;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.phone-helper-popup::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffdddd transparent transparent transparent;
+}
+
 .rent-input:hover,
 .rent-input:focus {
   font-size: 14px;

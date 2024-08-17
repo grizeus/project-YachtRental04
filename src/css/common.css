@@ -160,6 +160,14 @@ body {
   color: #fbfbfb;
 }
 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: #0e1823 !important;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
