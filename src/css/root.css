@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+  @supports (-moz-appearance: none) {
+    scrollbar-width: normal;
+    scrollbar-color: hsla(181, 44%, 78%, 0.295) hsl(182 37% 56% / 0.1);
+    scrollbar-gutter: stable;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 2vw;
+  }
+}
+@media (min-width: 1280px) {
+  ::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0e1823;
+  border-radius: 8px;
+  margin-block: 0.2vw;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: hsl(182 37% 56% / 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(181, 44%, 78%, 0.295);
+  width: 2vw;
+  height: 1em;
+  border-radius: 8px;
+  -webkit-transition: background-color 2s ease-in-out;
+  transition: background-color 2s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(181, 62%, 80%, 0.486);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 100%;
+  font-weight: 400;
+
+  color: #fff;
+  background-color: #0e1823;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @supports (text-size-adjust: 100%) {
+    text-size-adjust: 100%;
+  }
+  @supports (text-size-adjust: 100%) {
+    text-size-adjust: 100%;
+  }
+  @supports (font-synthesis: none) {
+    font-synthesis: none;
+  }
+}
+
+.top-scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(192.5 33.3% 15.9%);
+  color: #fbfbfb;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  visibility: hidden;
+  z-index: 100;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.top-scroll-btn:hover {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}
