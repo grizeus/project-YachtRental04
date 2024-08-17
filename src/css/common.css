@@ -2,36 +2,54 @@ html {
   scroll-behavior: smooth;
   @supports (-moz-appearance: none) {
     scrollbar-width: normal;
-    scrollbar-color: #575455 #374151;
+    scrollbar-color: hsl(182 37% 56% / 0.3) hsl(182 37% 56% / 0.1);
+    scrollbar-gutter: stable;
   }
 }
 
-html::-webkit-scrollbar {
-  width: 0.6vw;
-}
-
-
-html::-webkit-scrollbar-track {
-  background-color: #0e1823aa;
-  transition: background-color 0.2s ease-in-out;
-}
-
-html::-webkit-scrollbar-track:hover {
-  background-color: #0e1823;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #fbfbfb;
-  border-radius: 8px;
-  transition: width 0.2s ease-in-out;
-}
-
-html::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar {
   width: 1vw;
 }
 
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 2vw;
+  }
+}
+@media (min-width: 1280px) {
+  ::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+}
+
+::-webkit-scrollbar:hover {
+  width: 10vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0e1823;
+  border-radius: 8px;
+  margin-block: 0.2vw;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: hsl(182 37% 56% / 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(182 37% 56% / 0.3);
+  width: 2vw;
+  height: 1em;
+  border-radius: 8px;
+  transition: background-color 2s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(182 37% 56% / 0.4);
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 100%;
   font-weight: 400;
 
@@ -42,7 +60,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @supports (text-size-adjust: 100%) {
-    text-size-adjust: 100%; 
+    text-size-adjust: 100%;
   }
   @supports (text-size-adjust: 100%) {
     text-size-adjust: 100%;
@@ -116,7 +134,6 @@ body {
 .form-element:focus::placeholder {
   color: #fbfbfb;
 }
-
 
 @media (min-width: 768px) {
   .container {

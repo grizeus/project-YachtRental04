@@ -36,9 +36,20 @@
   gap: 10px;
   overflow-x: scroll;
   scroll-snap-type: x proximity;
+  @supports (-moz-appearance: none) {
+    scrollbar-width: thin;
+  }
   min-width: 280px;
   max-width: 335px;
   width: 100%;
+}
+
+.reviews-list::-webkit-scrollbar:horizontal {
+  height: .8vw;
+}
+
+.reviews-list::-webkit-scrollbar-track {
+  background-color: hsl(182 37% 56% / 0.1);
 }
 
 .reviews-item {

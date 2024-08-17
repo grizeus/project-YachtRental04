@@ -17,9 +17,20 @@
   max-width: 335px;
   gap: 10px;
   overflow-x: scroll;
+  @supports (-moz-appearance: none) {
+    scrollbar-width: thin;
+  }
   scroll-snap-type: x proximity;
   margin: 0 auto 40px;
   width: 100%;
+}
+
+.yachts-list::-webkit-scrollbar:horizontal {
+  height: .8vw;
+}
+
+.yachts-list::-webkit-scrollbar-track {
+  background-color: hsl(182 37% 56% / 0.1);
 }
 
 .yachts-item {
@@ -139,7 +150,6 @@
 }
 
 @media screen and (max-width: 374px) {
-  
   .yachts-list {
     min-width: unset;
   }
