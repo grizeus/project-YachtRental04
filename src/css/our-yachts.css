@@ -1,5 +1,4 @@
 /* Our yachts */
-
 .section-title {
   font-weight: 500;
   font-size: 28px;
@@ -20,13 +19,14 @@
   @supports (-moz-appearance: none) {
     scrollbar-width: thin;
   }
+  -ms-scroll-snap-type: x proximity;
   scroll-snap-type: x proximity;
   margin: 0 auto 40px;
   width: 100%;
 }
 
 .yachts-list::-webkit-scrollbar:horizontal {
-  height: .8vw;
+  height: 0.8vw;
 }
 
 .yachts-list::-webkit-scrollbar-track {
@@ -40,7 +40,6 @@
 .yachts-list::-webkit-scrollbar-thumb:hover {
   background-color: hsla(181, 62%, 80%, 0.486);
 }
-
 
 .yachts-item {
   scroll-snap-align: start;
@@ -56,6 +55,7 @@
   border-radius: 24px;
   height: 240px;
   margin-bottom: 32px;
+  -o-object-fit: cover;
   object-fit: cover;
   background-position: center;
 }
@@ -131,6 +131,7 @@
 
 .yacht-spec .parameter {
   color: #040306;
+  -webkit-margin-start: 0;
   margin-inline-start: 0;
   width: 94px;
   max-width: 96px;

@@ -35,6 +35,7 @@
   display: flex;
   gap: 10px;
   overflow-x: scroll;
+  -ms-scroll-snap-type: x proximity;
   scroll-snap-type: x proximity;
   @supports (-moz-appearance: none) {
     scrollbar-width: thin;
@@ -45,7 +46,7 @@
 }
 
 .reviews-list::-webkit-scrollbar:horizontal {
-  height: .8vw;
+  height: 0.8vw;
 }
 
 .reviews-list::-webkit-scrollbar-track {

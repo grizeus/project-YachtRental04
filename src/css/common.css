@@ -37,6 +37,7 @@ html {
   width: 2vw;
   height: 1em;
   border-radius: 8px;
+  -webkit-transition: background-color 2s ease-in-out;
   transition: background-color 2s ease-in-out;
 }
 
@@ -74,6 +75,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -122,8 +124,35 @@ body {
   color: #fbfbfb;
 }
 
+.form-element::-webkit-input-placeholder {
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.form-element::-moz-placeholder {
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.form-element:-ms-input-placeholder {
+  color: rgba(251, 251, 251, 0.4);
+}
+
 .form-element::placeholder {
   color: rgba(251, 251, 251, 0.4);
+}
+
+.form-element:hover::-webkit-input-placeholder,
+.form-element:focus::-webkit-input-placeholder {
+  color: #fbfbfb;
+}
+
+.form-element:hover::-moz-placeholder,
+.form-element:focus::-moz-placeholder {
+  color: #fbfbfb;
+}
+
+.form-element:hover::-ms-input-placeholder,
+.form-element:focus::-ms-input-placeholder {
+  color: #fbfbfb;
 }
 
 .form-element:hover::placeholder,
