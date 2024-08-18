@@ -26,7 +26,11 @@
     <load="/partials/reviews.html" />
   </main>
   <load="/partials/footer.html" />
-  <button type="button" class="top-scroll-btn">^</button>
+  <button type="button" class="top-scroll-btn" aria-label="back to top">
+    <svg class="svg-icon" width="22" height="22">
+      <use href="/images/symbol-defs.svg#icon-arrow-up"></use>
+    </svg>
+  </button>
   <script type="module" src="./main.js"></script>
 </body>
 
