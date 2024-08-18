@@ -18,6 +18,44 @@
   font-size: 12px;
 }
 
+.rent-phone-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.phone-helper-popup {
+  position: absolute;
+  background-color: #e27246;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .phone-helper-popup {
+    font-size: 16px;
+    padding: 2px;
+    top: -40px;
+  }
+}
+
+.phone-helper-popup::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #e27246 transparent transparent transparent;
+}
+
 .rent-input:hover,
 .rent-input:focus {
   font-size: 14px;
