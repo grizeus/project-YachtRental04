@@ -90,3 +90,12 @@ body {
   color: #1b414b;
   background-color: #fbfbfb;
 }
+
+.svg-icon {
+  stroke: #fbfbfb;
+  transition: stroke 0.2s ease-in-out;
+}
+
+.top-scroll-btn:hover .svg-icon {
+  stroke: #1b414b;
+}
