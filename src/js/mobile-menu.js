@@ -11,16 +11,20 @@ export default (() => {
   }
 
   const preventTouchMove = e => {
-    e.preventDefault();
+    if (!mobMenu.contains(e.target)) {
+      e.preventDefault();
+    }
   };
 
-  const addTouchMoveListener = () => {
+  const addBodyScrollPrevention = () => {
+      document.body.classList.add("scroll-lock");
     document.body.addEventListener("touchmove", preventTouchMove, {
       passive: false,
     });
   };
 
-  const removeTouchMoveListener = () => {
+  const removeBodyScrollPrevention = () => {
+      document.body.classList.remove("scroll-lock");
     document.body.removeEventListener("touchmove", preventTouchMove, {
       passive: false,
     });
@@ -35,9 +39,9 @@ export default (() => {
     mobMenu.style.overflow = "auto";
 
     if (!isMenuOpen) {
-      addTouchMoveListener();
+      addBodyScrollPrevention();
     } else {
-      removeTouchMoveListener();
+      removeBodyScrollPrevention();
     }
 
     const menuAnchors = mobMenu.querySelectorAll("a.mobile-nav-link");
@@ -62,8 +66,8 @@ export default (() => {
   mediaQuery.addEventListener("change", queryHandler);
 
   if (mobMenu.classList.contains("is-open")) {
-    addTouchMoveListener();
+    addBodyScrollPrevention();
   } else {
-    removeTouchMoveListener();
+    removeBodyScrollPrevention();
   }
 })();
