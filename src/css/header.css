@@ -48,6 +48,9 @@
   width: 100%;
   height: 100%;
   background-color: #0e1823;
+  @supports (-webkit-overflow-scrolling: touch) {
+    -webkit-overflow-scrolling: touch;
+  }
   z-index: 999;
 
   opacity: 0;
@@ -71,6 +74,7 @@
   padding-top: 259px;
   padding-bottom: 40px;
   height: 100%;
+  overflow-y: auto;
 }
 
 .close-btn {
@@ -96,6 +100,7 @@
   display: flex;
   flex-direction: column;
   max-width: fit-content;
+  max-width: -moz-fit-content;
   gap: 4px;
 }
 
