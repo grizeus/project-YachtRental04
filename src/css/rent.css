@@ -61,12 +61,6 @@
   font-size: 14px;
 }
 
-.rent-input:hover::placeholder,
-.rent-input:focus::placeholder {
-  font-size: 14px;
-  line-height: 1.28px;
-}
-
 .rent-comment {
   height: 108px;
   resize: none;
