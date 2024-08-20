@@ -119,3 +119,9 @@
     max-width: 1440px;
   }
 }
+
+.scroll-lock {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

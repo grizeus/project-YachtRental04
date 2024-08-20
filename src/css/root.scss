@@ -86,11 +86,8 @@ body {
   visibility: hidden;
   z-index: 100;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.top-scroll-btn:hover {
-  color: $dark-cyan;
-  background-color: $ivory-white;
+  /* safari tweak */
+  padding: 0;
 }
 
 .svg-icon {
@@ -98,6 +95,22 @@ body {
   transition: stroke 0.2s ease-in-out;
 }
 
-.top-scroll-btn:hover .svg-icon {
-  stroke: $dark-cyan;
+@media (hover: hover) and (pointer: fine) {
+  .top-scroll-btn:hover {
+    color: $dark-cyan;
+    background-color: $ivory-white;
+  }
+  
+  .top-scroll-btn:hover .svg-icon {
+    stroke: $dark-cyan;
+  }
+}
+
+.top-scroll-btn:active {
+  color: $ivory-white;
+  background-color: $dark-cyan;
+}
+
+.top-scroll-btn:active .svg-icon {
+  stroke: $ivory-white;
 }
