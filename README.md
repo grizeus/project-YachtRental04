@@ -18,6 +18,9 @@
 * A simple and easy-to-use codebase with minimal dependencies.
 * A well-organized and modular structure for easy maintenance and updates.
 * A simple and intuitive user interface with clear instructions and feedback.
+  
+`Look at`
+  [**Layout Figma**](https://www.figma.com/design/jRIYQopKXrN9adYQy22ygf/YachtJet?node-id=8101-272&t=lVMrdgSl6TUG343e-0)
 
 
 ## Dependencies
