@@ -16,7 +16,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <script type="module" crossorigin src="/project-YachtRental04/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/project-YachtRental04/assets/index-ef54d566.css">
+  <link rel="stylesheet" href="/project-YachtRental04/assets/index-4a12e599.css">
 </head>
 
 <body>
@@ -482,22 +482,28 @@
     <div class="rent-title-form-container">
       <h2 class="rent-title">Rent a yacht now</h2>
       <form class="rent-form">
-        <input
-          class="rent-input form-element"
-          type="text"
-          name="username"
-          placeholder="Full Name"
-          required
-        />
-        <input
-          class="rent-input form-element"
-          type="email"
-          name="email_address"
-          placeholder="Email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          required
-        />
-        <div class="rent-phone-container">
+        <div class="rent-input-container">
+          <input
+            class="rent-input form-element"
+            type="text"
+            name="username"
+            placeholder="Full Name"
+            required
+          />
+          <div class="input-popup"></div>
+        </div>
+        <div class="rent-input-container">
+          <input
+            class="rent-input form-element"
+            type="email"
+            name="email_address"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <div class="input-popup"></div>
+        </div>
+        <div class="rent-input-container">
           <input
             class="rent-input form-element"
             type="tel"
@@ -507,9 +513,7 @@
             maxlength="17"
             required
           />
-          <div class="phone-helper-popup">
-            Please use the international format, e.g. +38-420-123-45-67
-          </div>
+          <div class="input-popup"></div>
         </div>
         <textarea
           class="rent-comment form-element"
@@ -545,7 +549,6 @@
     </picture>
   </div>
 </section>
-
     <section class="reviews section" id="reviews">
   <div class="container">
     <div class="reviews-title-wrap">
