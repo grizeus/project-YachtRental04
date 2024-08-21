@@ -5,7 +5,6 @@ export default (() => {
   const inputs = form.querySelectorAll("input");
   const popups = document.querySelectorAll(".input-popup");
   const [namePop, emailPop, telPop] = popups;
-  
   const formatPhoneNumber = input => {
     let value = input.value.replace(/[^\d]/g, "");
     let formatted = "";
@@ -32,8 +31,12 @@ export default (() => {
 
     input.value = formatted;
   };
+  const popupContent = { name: "Please enter your full name", email: "Please enter your email: \"name@domain.com\"", phone: "Please use the international format, e.g. +38-420-123-45-67"};
+  const initialBorderColor = inputs[0].style.borderColor;
+  const warnBorderColor = "#e27246";
 
-  inputs.forEach(input => {
+  let firstInvalidInput = null;
+  for (const input of inputs) {
     if (input.name === "telephone_number") {
       input.addEventListener("input", e => formatPhoneNumber(e.target));
     }
@@ -41,42 +44,35 @@ export default (() => {
     input.addEventListener("invalid", e => {
       e.preventDefault();
 
-      // Reset all previous invalid marks and popup
-      inputs.forEach(inp => inp.classList.remove("input-invalid"));
-      popups.forEach(popup => (popup.style.visibility = "hidden"));
-
-      // Mark the first invalid input
-      if (!form.querySelector(".input-invalid")) {
-        input.classList.add("input-invalid");
-        switch (input.type) {
-          case "text":
+      if (!firstInvalidInput) {
+        firstInvalidInput = input;
+      
+        switch (input.name) {
+          case "username":
+            input.style.borderColor = warnBorderColor;
+            namePop.innerHTML = popupContent.name;
             namePop.style.visibility = "visible";
-            console.log("name");
             break;
-          case "email":
+          case "email_address":
+            input.style.borderColor = warnBorderColor;
+            emailPop.innerHTML = popupContent.email;
             emailPop.style.visibility = "visible";
-            console.log("email");
             break;
-          case "tel":
+          case "telephone_number":
+            input.style.borderColor = warnBorderColor;
+            telPop.innerHTML = popupContent.phone;
             telPop.style.visibility = "visible";
-            console.log("tel");
+            break;
+          default:
             break;
         }
       }
     });
 
     input.addEventListener("focus", () => {
-      input.classList.remove("input-invalid");
+      inputs.forEach(input => (input.style.borderColor = initialBorderColor));
       popups.forEach(popup => (popup.style.visibility = "hidden"));
+      firstInvalidInput = null;
     });
-  });
-
-  form.addEventListener("submit", e => {
-    const firstInvalidInput = form.querySelector("input:invalid");
-
-    if (firstInvalidInput) {
-      e.preventDefault();
-      firstInvalidInput.focus();
-    }
-  });
+  }
 })();
