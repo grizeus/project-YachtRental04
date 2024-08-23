@@ -8,24 +8,13 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 1vw;
-}
-
-@media (max-width: 767px) {
-  ::-webkit-scrollbar {
-    width: 2vw;
-  }
-}
-@media (min-width: 1280px) {
-  ::-webkit-scrollbar {
-    width: 0.8vw;
-  }
+  width: 1em;
 }
 
 ::-webkit-scrollbar-track {
   background-color: #0e1823;
-  border-radius: 8px;
-  margin-block: 0.2vw;
+  border-radius: 100vw;
+  margin-block: 0.5em;
 }
 
 ::-webkit-scrollbar-track:hover {
@@ -34,9 +23,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: hsla(181, 44%, 78%, 0.295);
-  width: 2vw;
-  height: 1em;
-  border-radius: 8px;
+  border-radius: 100vw;
   -webkit-transition: background-color 2s ease-in-out;
   transition: background-color 2s ease-in-out;
 }
