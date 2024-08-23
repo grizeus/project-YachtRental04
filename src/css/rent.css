@@ -18,13 +18,13 @@
   font-size: 12px;
 }
 
-.rent-phone-container {
+.rent-input-container {
   position: relative;
   display: inline-block;
   width: 100%;
 }
 
-.phone-helper-popup {
+.input-popup {
   position: absolute;
   background-color: #e27246;
   text-align: center;
@@ -38,14 +38,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .phone-helper-popup {
+  .input-popup {
     font-size: 16px;
     padding: 2px;
     top: -40px;
   }
 }
 
-.phone-helper-popup::after {
+.input-popup::after {
   content: "";
   position: absolute;
   bottom: -9px;
