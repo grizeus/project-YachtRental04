@@ -74,7 +74,6 @@
   padding-top: 259px;
   padding-bottom: 40px;
   height: 100%;
-  overflow-y: auto;
 }
 
 .close-btn {
@@ -132,6 +131,7 @@
   align-items: flex-end;
   gap: 8px;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .mobile-social-icon {
@@ -141,6 +141,17 @@
 
 .mobile-social-link:hover .mobile-social-icon {
   opacity: 0.8;
+}
+
+@media screen and (orientation: landscape) {
+  .header-container {
+    max-width: 703px;
+  }
+
+  .mobile-menu-container {
+    padding-top: 100px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
