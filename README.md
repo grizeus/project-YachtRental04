@@ -28,14 +28,13 @@
 * [Vite: 4.5.2+](https://vitejs.dev/)
 * [glob: 8.1.0+](https://www.npmjs.com/package/glob)
 
-## Installation
+## Usage
 
 1. Clone the repository: 
     ```
     git clone https://github.com/grizeus/project-YachtRental04
     ```
-2. Open the project in your preferred code editor
-3. Install dependencies for your preferred package manager:
+2. Install dependencies with your preferred package manager and enter development mode:
     ### npm:
     ```
     npm install --save
