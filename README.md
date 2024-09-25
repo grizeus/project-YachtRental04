@@ -23,10 +23,12 @@
   [**Layout Figma**](https://www.figma.com/design/jRIYQopKXrN9adYQy22ygf/YachtJet?node-id=8101-272&t=lVMrdgSl6TUG343e-0)
 
 
-## Dependencies
+## Technology Used
 
-* [Vite: 4.5.2+](https://vitejs.dev/)
-* [glob: 8.1.0+](https://www.npmjs.com/package/glob)
+* Frontend: HTML, CSS, JavaScript
+* Bundler: Vite
+* Code Editor: VS Code, Neovim
+* Hosting: GitHub Pages
 
 ## Usage
 
@@ -59,24 +61,13 @@
     ```
     (you can also ommit `--save` flag)
 
-    ## pnpm:
-    ```
-    pnpm install
-    npm run dev
-    ```
-
-    ## yarn:
-    ```
-    yarn
-    yarn run
-    ```
 ## Credits
 
 **Team members** : 
 * Team leader: [Petro Zaitsev](https://github.com/grizeus)
 * Scrum master: [Khrystyna Srorozhuk](https://github.com/kris9899)
 * Developers: 
-  * [Petro Zaitsev](https://github.com/grizeus), orchestrator and team leader.
+  * [Petro Zaitsev](https://github.com/grizeus), orchestrator and team leader, optimization, custom popups.
   * [Khrystyna Srorozhuk](https://github.com/kris9899), scrum master, meating supervisor, section "Hero".
   * [Sofiia Ihnatieva](https://github.com/sonja-plgdd), section "Header" and mobile menu.
   * [Yaroslavna Yermolenko](https://github.com/YaroslavnaYermolenko), section "About Us".
