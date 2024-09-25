@@ -1,3 +1,5 @@
+@import "variables";
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -34,23 +36,23 @@
   font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: #fbfbfb;
-  background-color: #1b414b;
+  color: $ivory-white;
+  background-color: $dark-cyan;
   cursor: pointer;
 }
 
 .form-element {
   width: 100%;
-  border: 1px solid rgba(251, 251, 251, 0.2);
+  border: 1px solid $ivory-white-20;
   border-radius: 12px;
   padding: 18px;
   background-color: transparent;
-  color: rgba(251, 251, 251, 0.4);
+  color: $ivory-white-40;
 }
 
 .form-element:hover,
 .form-element:focus {
-  border: 1px solid rgba(251, 251, 251, 0.5);
+  border: 1px solid $ivory-white-50;
   outline: none;
   color: #fbfbfb;
 }
@@ -88,7 +90,7 @@
 
 .form-element:hover::placeholder,
 .form-element:focus::placeholder {
-  color: #fbfbfb;
+  color: $ivory-white;
 }
 
 @media (min-width: 768px) {

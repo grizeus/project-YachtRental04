@@ -1,3 +1,5 @@
+@import "variables";
+
 html {
   scroll-behavior: smooth;
   @supports (-moz-appearance: none) {
@@ -12,7 +14,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0e1823;
+  background-color: $slate-blue;
   border-radius: 100vw;
   margin-block: 0.5em;
 }
@@ -38,7 +40,7 @@ body {
   font-weight: 400;
 
   color: #fff;
-  background-color: #0e1823;
+  background-color: $slate-blue;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -63,7 +65,7 @@ body {
   border: none;
   border-radius: 50%;
   background-color: hsl(192.5 33.3% 15.9%);
-  color: #fbfbfb;
+  color: $ivory-white;
   font-weight: 500;
   font-size: 30px;
   line-height: 1;
@@ -76,26 +78,26 @@ body {
 }
 
 .svg-icon {
-  stroke: #fbfbfb;
+  stroke: $ivory-white;
   transition: stroke 0.2s ease-in-out;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .top-scroll-btn:hover {
-    color: #1b414b;
-    background-color: #fbfbfb;
+    color: $dark-cyan;
+    background-color: $ivory-white;
   }
-
+  
   .top-scroll-btn:hover .svg-icon {
-    stroke: #1b414b;
+    stroke: $dark-cyan;
   }
 }
 
 .top-scroll-btn:active {
-  color: #fbfbfb;
-  background-color: #1b414b;
+  color: $ivory-white;
+  background-color: $dark-cyan;
 }
 
 .top-scroll-btn:active .svg-icon {
-  stroke: #fbfbfb;
+  stroke: $ivory-white;
 }
