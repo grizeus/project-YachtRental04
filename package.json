@@ -8,14 +8,16 @@
     "build": "vite build --base=/project-YachtRental04/",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
-  },
   "author": "Petro Zaitsev <zaytsewww@gmail.com>",
   "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "vite": "^4.5.2",
+    "glob": "^8.1.0",
+    "autoprefixer": "^10.4.20",
+    "sass": "^1.77.8"
+  },
   "dependencies": {
-    "sass": "^1.77.8",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
