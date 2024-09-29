@@ -1,8 +1,8 @@
+import Carousel from "../Carousel/Carousel";
+
 const App = () => {
   return (
-    <div className="App">
-      <p>Hello World from react</p>
-    </div>
+    <Carousel />
   );
 };
 
