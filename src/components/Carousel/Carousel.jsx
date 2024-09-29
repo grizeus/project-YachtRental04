@@ -1,4 +1,9 @@
-import { Keyboard, Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Keyboard,
+  Navigation,
+  Pagination,
+  Scrollbar,
+} from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -7,24 +12,27 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+import "./Carousel.module.css";
+
 const Carousel = () => {
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard]}
-        slidesPerView={3}
+        modules={[Navigation, Pagination, Scrollbar, Keyboard]}
+        slidesPerView={2}
         spaceBetween={30}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-              }}
-              keyboard={{
-                enabled: true,
-                onlyInViewport: true,
-              }}
+        }}
+        keyboard={{
+          enabled: true,
+          onlyInViewport: true,
+        }}
+        className="yachts-list"
       >
-        <SwiperSlide>
+        <SwiperSlide className="yachts-item">
           <picture>
             <source
               srcSet="
@@ -61,7 +69,7 @@ const Carousel = () => {
             />
           </picture>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="yachts-item">
           <picture>
             <source
               srcSet="
@@ -98,7 +106,7 @@ const Carousel = () => {
             />
           </picture>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="yachts-item">
           <picture>
             <source
               srcSet="
@@ -135,11 +143,9 @@ const Carousel = () => {
             />
           </picture>
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <button className="swiper-button-next"></button>
-              <button className="swiper-button-prev"></button>
-              <div className="swiper-pagination"></div>
+        <button className="swiper-button-next"></button>
+        <button className="swiper-button-prev"></button>
+        <div className="swiper-pagination"></div>
       </Swiper>
     </>
   );
