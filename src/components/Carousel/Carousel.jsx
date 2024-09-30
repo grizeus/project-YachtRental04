@@ -34,6 +34,7 @@ import belleAnnaTab2x from "../../images/our-yachts/belle-anna-tab@2x.jpg";
 import belleAnnaMob from "../../images/our-yachts/belle-anna-mob.jpg";
 import belleAnnaMob2x from "../../images/our-yachts/belle-anna-mob@2x.jpg";
 
+
 const Carousel = () => {
   const [queryResolution] = useState(
     window.matchMedia("(min-width: 1280px) and (max-width: 1439px)")
@@ -47,7 +48,7 @@ const Carousel = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [queryResolution]);
-
+  
   return (
     <>
       <Swiper
