@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
+import react from "@vitejs/plugin-react";
 
 export default defineConfig(({ command }) => {
   return {
@@ -25,6 +26,6 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [injectHTML(), FullReload(['./src/**/**.html'], react())],
   };
 });
