@@ -16,6 +16,24 @@ import yacht13x2 from "../../images/our-yachts/13-img-yacht@2x-min.jpg";
 import yacht14x1 from "../../images/our-yachts/14-img-yacht@1x-min.jpg";
 import yacht14x2 from "../../images/our-yachts/14-img-yacht@2x-min.jpg";
 
+import yacht22x1 from "../../images/our-yachts/22-img-yacht@1x-min.jpg";
+import yacht22x2 from "../../images/our-yachts/22-img-yacht@2x-min.jpg";
+import yacht21x1 from "../../images/our-yachts/21-img-yacht@1x-min.jpg";
+import yacht21x2 from "../../images/our-yachts/21-img-yacht@2x-min.jpg";
+import yacht20x1 from "../../images/our-yachts/20-img-yacht@1x-min.jpg";
+import yacht20x2 from "../../images/our-yachts/20-img-yacht@2x-min.jpg";
+import benettiMob from "../../images/our-yachts/benetti-mob.jpg";
+import benettiMob2x from "../../images/our-yachts/benetti-mob@2x.jpg";
+
+import yacht31x1 from "../../images/our-yachts/31-img-yacht@1x-min.jpg";
+import yacht31x2 from "../../images/our-yachts/31-img-yacht@2x-min.jpg";
+import yacht30x1 from "../../images/our-yachts/30-img-yacht@1x-min.jpg";
+import yacht30x2 from "../../images/our-yachts/30-img-yacht@2x-min.jpg";
+import belleAnnaTab from "../../images/our-yachts/belle-anna-tab.jpg";
+import belleAnnaTab2x from "../../images/our-yachts/belle-anna-tab@2x.jpg";
+import belleAnnaMob from "../../images/our-yachts/belle-anna-mob.jpg";
+import belleAnnaMob2x from "../../images/our-yachts/belle-anna-mob@2x.jpg";
+
 const Carousel = () => {
   const [queryResolution] = useState(
     window.matchMedia("(min-width: 1280px) and (max-width: 1439px)")
@@ -111,36 +129,36 @@ const Carousel = () => {
         <SwiperSlide className={styles["yachts-item"]}>
           <picture>
             <source
-              srcSet="
-        /images/our-yachts/22-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/22-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`
+        ${yacht22x1} 1x,
+        ${yacht22x2} 2x
+      `}
               media="(min-width:1440px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/21-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/21-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`
+        ${yacht21x1} 1x,
+        ${yacht21x2} 2x
+      `}
               media="(min-width:1280px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/20-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/20-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`
+        ${yacht20x1} 1x,
+        ${yacht20x2} 2x
+      `}
               media="(min-width:768px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/benetti-mob.jpg    1x,
-        /images/our-yachts/benetti-mob@2x.jpg 2x
-      "
+              srcSet={`
+        ${benettiMob}    1x,
+        ${benettiMob2x} 2x
+      `}
               media="(max-width:767px)"
             />
             <img
               className={styles["yacht-photo"]}
-              src="/images/our-yachts/benetti-mob.jpg"
+              src={benettiMob}
               alt="yacht"
             />
           </picture>
@@ -175,36 +193,24 @@ const Carousel = () => {
         <SwiperSlide className={styles["yachts-item"]}>
           <picture>
             <source
-              srcSet="
-        /images/our-yachts/31-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/31-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`${yacht31x1} 1x, ${yacht31x2} 2x`}
               media="(min-width:1440px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/30-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/30-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`${yacht30x1} 1x, ${yacht30x2} 2x`}
               media="(min-width:1280px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/belle-anna-tab.jpg    1x,
-        /images/our-yachts/belle-anna-tab@2x.jpg 2x
-      "
+              srcSet={`${belleAnnaTab}    1x, ${belleAnnaTab2x} 2x`}
               media="(min-width:768px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/belle-anna-mob.jpg    1x,
-        /images/our-yachts/belle-anna-mob@2x.jpg 2x
-      "
+              srcSet={`${belleAnnaMob}    1x, ${belleAnnaMob2x} 2x`}
               media="(max-width:767px)"
             />
             <img
               className={styles["yacht-photo"]}
-              src="/images/our-yachts/belle-anna-mob.jpg"
+              src={belleAnnaMob}
               alt="yacht"
             />
           </picture>
