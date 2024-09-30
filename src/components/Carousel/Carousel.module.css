@@ -1,18 +1,15 @@
 .yachts-list {
   height: 478px;
-  display: flex;
   min-width: 280px;
   max-width: 335px;
 
   margin: 0 auto 40px;
-  width: 100%;
 }
 
 .yachts-item {
   min-width: 280px;
   width: 100%;
   background-color: #fbfbfb;
-  flex-shrink: 0;
   border-radius: 24px;
   padding: 16px 16px 32px;
 }
@@ -45,10 +42,6 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #1b414b;
-}
-
-.yacht-name:hover {
-  overflow: visible;
 }
 
 .yacht-type {
@@ -155,6 +148,10 @@
   .yachts-list {
     width: 1181px;
   }
+
+  .yacht-name:hover {
+  overflow: visible;
+}
 
   .yachts-item {
     max-width: 377px;
