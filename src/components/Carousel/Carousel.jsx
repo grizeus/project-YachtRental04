@@ -1,4 +1,4 @@
-import { Keyboard, Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Keyboard, /* Navigation */ Pagination/* , Scrollbar */ } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,14 +13,14 @@ const Carousel = () => {
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, Keyboard]}
+        modules={[/* Navigation */ Pagination, /* Scrollbar, */ Keyboard]}
         slidesPerView={"auto"}
         spaceBetween={32}
         pagination={{ el: ".swiper-pagination", clickable: true }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
+        // navigation={{
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // }}
         keyboard={{
           enabled: true,
           onlyInViewport: true,
@@ -221,8 +221,8 @@ const Carousel = () => {
             </div>
           </div>
         </SwiperSlide>
-        <button className="swiper-button-next"></button>
-        <button className="swiper-button-prev"></button>
+        {/* <button className="swiper-button-next"></button>
+        <button className="swiper-button-prev"></button> */}
         <div className="swiper-pagination"></div>
       </Swiper>
     </>
