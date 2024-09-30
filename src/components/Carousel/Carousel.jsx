@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Keyboard, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -7,15 +8,25 @@ import "swiper/css/pagination";
 import styles from "./Carousel.module.css";
 
 const Carousel = () => {
-  const queryResolution = window.matchMedia(
-    "(min-width: 1280px) and (max-width: 1439px)"
+  const [queryResolution] = useState(
+    window.matchMedia("(min-width: 1280px) and (max-width: 1439px)")
   );
+  const [spaceBetween, setSpaceBetween] = useState(32);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSpaceBetween(queryResolution.matches ? 24 : 32);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [queryResolution]);
+  
   return (
     <>
       <Swiper
         modules={[Pagination, Keyboard]}
         slidesPerView={"auto"}
-        spaceBetween={queryResolution.matches ? 24 : 32}
+        spaceBetween={spaceBetween}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         keyboard={{
           enabled: true,
