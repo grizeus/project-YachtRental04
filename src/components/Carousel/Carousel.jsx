@@ -7,6 +7,15 @@ import "swiper/css/pagination";
 
 import styles from "./Carousel.module.css";
 
+import yacht11x1 from "../../images/our-yachts/11-img-yacht@1x-min.jpg";
+import yacht11x2 from "../../images/our-yachts/11-img-yacht@2x-min.jpg";
+import yacht12x1 from "../../images/our-yachts/12-img-yacht@1x-min.jpg";
+import yacht12x2 from "../../images/our-yachts/12-img-yacht@2x-min.jpg";
+import yacht13x1 from "../../images/our-yachts/13-img-yacht@1x-min.jpg";
+import yacht13x2 from "../../images/our-yachts/13-img-yacht@2x-min.jpg";
+import yacht14x1 from "../../images/our-yachts/14-img-yacht@1x-min.jpg";
+import yacht14x2 from "../../images/our-yachts/14-img-yacht@2x-min.jpg";
+
 const Carousel = () => {
   const [queryResolution] = useState(
     window.matchMedia("(min-width: 1280px) and (max-width: 1439px)")
@@ -20,7 +29,7 @@ const Carousel = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [queryResolution]);
-  
+
   return (
     <>
       <Swiper
@@ -38,36 +47,36 @@ const Carousel = () => {
         <SwiperSlide className={styles["yachts-item"]}>
           <picture>
             <source
-              srcSet="
-        /images/our-yachts/14-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/14-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`
+        ${yacht14x1} 1x,
+        ${yacht14x2} 2x
+      `}
               media="(min-width:1440px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/13-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/13-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`
+        ${yacht13x1} 1x,
+        ${yacht13x2} 2x
+      `}
               media="(min-width:1280px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/12-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/12-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`
+        ${yacht12x1} 1x,
+        ${yacht12x2} 2x
+      `}
               media="(min-width:768px)"
             />
             <source
-              srcSet="
-        /images/our-yachts/11-img-yacht@1x-min.jpg 1x,
-        /images/our-yachts/11-img-yacht@2x-min.jpg 2x
-      "
+              srcSet={`
+        ${yacht11x1} 1x,
+        ${yacht11x2} 2x
+      `}
               media="(max-width:767px)"
             />
             <img
               className={styles["yacht-photo"]}
-              src="/images/our-yachts/11-img-yacht@1x-min.jpg"
+              src={yacht11x1}
               alt="yacht"
             />
           </picture>
