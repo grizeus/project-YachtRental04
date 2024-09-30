@@ -1,9 +1,4 @@
-import {
-  Keyboard,
-  Navigation,
-  Pagination,
-  Scrollbar,
-} from "swiper/modules";
+import { Keyboard, Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,8 +14,8 @@ const Carousel = () => {
     <>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, Keyboard]}
-        slidesPerView={2}
-        spaceBetween={30}
+        slidesPerView={"auto"}
+        spaceBetween={32}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
           nextEl: ".swiper-button-next",
@@ -29,7 +24,9 @@ const Carousel = () => {
         keyboard={{
           enabled: true,
           onlyInViewport: true,
+          pageUpDown: true,
         }}
+        mousewheel={{ enabled: true, sensitivity: 1 }}
         className="yachts-list"
       >
         <SwiperSlide className="yachts-item">
@@ -68,6 +65,33 @@ const Carousel = () => {
               alt="yacht"
             />
           </picture>
+          <div className="yacht-description">
+            <h3 className="yacht-name">Arrow</h3>
+            <p className="yacht-type">LUXURY YAHTS</p>
+          </div>
+          <hr className="specs-separator" />
+          <div className="yacht-specs">
+            <div className="yacht-spec">
+              <p className="options">LENGTH</p>
+              <p className="parameter">48m(155ft)</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">BUILDER</p>
+              <p className="parameter">Admiral</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">BUILT</p>
+              <p className="parameter">2021</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">GUESTS</p>
+              <p className="parameter">11 in 5 cabins</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">PRICE</p>
+              <p className="parameter">€33,500,000</p>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="yachts-item">
           <picture>
@@ -105,6 +129,33 @@ const Carousel = () => {
               alt="yacht"
             />
           </picture>
+          <div className="yacht-description">
+            <h3 className="yacht-name">BENETTI OASIS 40M BO122</h3>
+            <p className="yacht-type">LUXURY YAHTS</p>
+          </div>
+          <hr className="specs-separator" />
+          <div className="yacht-specs">
+            <div className="yacht-spec">
+              <p className="options">LENGTH</p>
+              <p className="parameter">41m (133ft)</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">SHIPYARD</p>
+              <p className="parameter">Benetti</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">BUILT</p>
+              <p className="parameter">2025</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">GUESTS</p>
+              <p className="parameter">10 in 5 cabins</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">PRICE</p>
+              <p className="parameter">€23,210,000</p>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="yachts-item">
           <picture>
@@ -142,6 +193,33 @@ const Carousel = () => {
               alt="yacht"
             />
           </picture>
+          <div className="yacht-description">
+            <h3 className="yacht-name">BELLE ANNA</h3>
+            <p className="yacht-type">LUXURY YAHTS</p>
+          </div>
+          <hr className="specs-separator" />
+          <div className="yacht-specs">
+            <div className="yacht-spec">
+              <p className="options">LENGTH</p>
+              <p className="parameter">50m(155ft)</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">SHIPYARD</p>
+              <p className="parameter">ISA</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">BUILT</p>
+              <p className="parameter">2012</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">GUESTS</p>
+              <p className="parameter">12 in 6 cabins</p>
+            </div>
+            <div className="yacht-spec">
+              <p className="options">PRICE</p>
+              <p className="parameter">€21,000,000</p>
+            </div>
+          </div>
         </SwiperSlide>
         <button className="swiper-button-next"></button>
         <button className="swiper-button-prev"></button>
