@@ -117,10 +117,6 @@
     height: 268px;
   }
 
-  .yacht-photo-wrapper {
-    height: 268px;
-  }
-
   .yacht-description {
     width: 272px;
   }
@@ -150,8 +146,8 @@
   }
 
   .yacht-name:hover {
-  overflow: visible;
-}
+    overflow: visible;
+  }
 
   .yachts-item {
     max-width: 377px;

@@ -1,8 +1,12 @@
-import Carousel from "../Carousel/Carousel";
+import { lazy, Suspense } from "react";
+
+const Carousel = lazy(() => import("../Carousel/Carousel"));
 
 const App = () => {
   return (
-    <Carousel />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Carousel />
+    </Suspense>
   );
 };
 
