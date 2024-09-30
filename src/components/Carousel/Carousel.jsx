@@ -23,7 +23,6 @@ const Carousel = () => {
           onlyInViewport: true,
           pageUpDown: true,
         }}
-        mousewheel={{ enabled: true, sensitivity: 1 }}
         className={styles["yachts-list"]}
       >
         <SwiperSlide className={styles["yachts-item"]}>
@@ -57,40 +56,40 @@ const Carousel = () => {
               media="(max-width:767px)"
             />
             <img
-              className="yacht-photo"
+              className={styles["yacht-photo"]}
               src="/images/our-yachts/11-img-yacht@1x-min.jpg"
               alt="yacht"
             />
           </picture>
-          <div className="yacht-description">
+          <div className={styles["yacht-description"]}>
             <h3 className={styles["yacht-name"]}>Arrow</h3>
-            <p className="yacht-type">LUXURY YAHTS</p>
+            <p className={styles["yacht-type"]}>LUXURY YAHTS</p>
           </div>
-          <hr className="specs-separator" />
-          <div className="yacht-specs">
-            <div className="yacht-spec">
-              <p className="options">LENGTH</p>
-              <p className="parameter">48m(155ft)</p>
+          <hr className={styles["specs-separator"]} />
+          <div className={styles["yacht-specs"]}>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>LENGTH</p>
+              <p className={styles["parameter"]}>48m(155ft)</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">BUILDER</p>
-              <p className="parameter">Admiral</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>BUILDER</p>
+              <p className={styles["parameter"]}>Admiral</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">BUILT</p>
-              <p className="parameter">2021</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>BUILT</p>
+              <p className={styles["parameter"]}>2021</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">GUESTS</p>
-              <p className="parameter">11 in 5 cabins</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>GUESTS</p>
+              <p className={styles["parameter"]}>11 in 5 cabins</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">PRICE</p>
-              <p className="parameter">€33,500,000</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>PRICE</p>
+              <p className={styles["parameter"]}>€33,500,000</p>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="yachts-item">
+        <SwiperSlide className={styles["yachts-item"]}>
           <picture>
             <source
               srcSet="
@@ -121,40 +120,40 @@ const Carousel = () => {
               media="(max-width:767px)"
             />
             <img
-              className="yacht-photo"
+              className={styles["yacht-photo"]}
               src="/images/our-yachts/benetti-mob.jpg"
               alt="yacht"
             />
           </picture>
-          <div className="yacht-description">
+          <div className={styles["yacht-description"]}>
             <h3 className={styles["yacht-name"]}>BENETTI OASIS 40M BO122</h3>
-            <p className="yacht-type">LUXURY YAHTS</p>
+            <p className={styles["yacht-type"]}>LUXURY YAHTS</p>
           </div>
-          <hr className="specs-separator" />
-          <div className="yacht-specs">
-            <div className="yacht-spec">
-              <p className="options">LENGTH</p>
-              <p className="parameter">41m (133ft)</p>
+          <hr className={styles["specs-separator"]} />
+          <div className={styles["yacht-specs"]}>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>LENGTH</p>
+              <p className={styles["parameter"]}>41m (133ft)</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">SHIPYARD</p>
-              <p className="parameter">Benetti</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>SHIPYARD</p>
+              <p className={styles["parameter"]}>Benetti</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">BUILT</p>
-              <p className="parameter">2025</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>BUILT</p>
+              <p className={styles["parameter"]}>2025</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">GUESTS</p>
-              <p className="parameter">10 in 5 cabins</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>GUESTS</p>
+              <p className={styles["parameter"]}>10 in 5 cabins</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">PRICE</p>
-              <p className="parameter">€23,210,000</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>PRICE</p>
+              <p className={styles["parameter"]}>€23,210,000</p>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="yachts-item">
+        <SwiperSlide className={styles["yachts-item"]}>
           <picture>
             <source
               srcSet="
@@ -185,36 +184,36 @@ const Carousel = () => {
               media="(max-width:767px)"
             />
             <img
-              className="yacht-photo"
+              className={styles["yacht-photo"]}
               src="/images/our-yachts/belle-anna-mob.jpg"
               alt="yacht"
             />
           </picture>
-          <div className="yacht-description">
+          <div className={styles["yacht-description"]}>
             <h3 className={styles["yacht-name"]}>BELLE ANNA</h3>
-            <p className="yacht-type">LUXURY YAHTS</p>
+            <p className={styles["yacht-type"]}>LUXURY YAHTS</p>
           </div>
-          <hr className="specs-separator" />
-          <div className="yacht-specs">
-            <div className="yacht-spec">
-              <p className="options">LENGTH</p>
-              <p className="parameter">50m(155ft)</p>
+          <hr className={styles["specs-separator"]} />
+          <div className={styles["yacht-specs"]}>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>LENGTH</p>
+              <p className={styles["parameter"]}>50m(155ft)</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">SHIPYARD</p>
-              <p className="parameter">ISA</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>SHIPYARD</p>
+              <p className={styles["parameter"]}>ISA</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">BUILT</p>
-              <p className="parameter">2012</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>BUILT</p>
+              <p className={styles["parameter"]}>2012</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">GUESTS</p>
-              <p className="parameter">12 in 6 cabins</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>GUESTS</p>
+              <p className={styles["parameter"]}>12 in 6 cabins</p>
             </div>
-            <div className="yacht-spec">
-              <p className="options">PRICE</p>
-              <p className="parameter">€21,000,000</p>
+            <div className={styles["yacht-spec"]}>
+              <p className={styles["options"]}>PRICE</p>
+              <p className={styles["parameter"]}>€21,000,000</p>
             </div>
           </div>
         </SwiperSlide>

@@ -108,12 +108,6 @@
   flex: 1 1 94px;
 }
 
-.yacht-rental:hover,
-.yacht-rental:focus {
-  background-color: #fbfbfb;
-  color: #1b414b;
-}
-
 @media screen and (min-width: 768px) {
   .yachts-list {
     max-width: unset;
