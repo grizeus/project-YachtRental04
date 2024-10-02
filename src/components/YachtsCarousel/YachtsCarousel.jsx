@@ -1,5 +1,3 @@
-// import { useState, useEffect } from "react";
-// import { Keyboard, Pagination } from "swiper/modules";
 import { SwiperSlide } from "swiper/react";
 
 import CustomSwiper from "../CustomSwiper/CustomSwiper";
@@ -7,7 +5,7 @@ import CustomSwiper from "../CustomSwiper/CustomSwiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import styles from "./Carousel.module.css";
+import styles from "./YachtsCarousel.module.css";
 
 import yacht11x1 from "../../images/our-yachts/11-img-yacht@1x-min.jpg";
 import yacht11x2 from "../../images/our-yachts/11-img-yacht@2x-min.jpg";
