@@ -31,90 +31,6 @@
   opacity: 0.4;
 }
 
-.reviews-list {
-  display: flex;
-  gap: 10px;
-  overflow-x: scroll;
-  -ms-scroll-snap-type: x proximity;
-  scroll-snap-type: x proximity;
-  @supports (-moz-appearance: none) {
-    scrollbar-width: thin;
-  }
-  min-width: 280px;
-  max-width: 335px;
-  width: 100%;
-}
-
-.reviews-list::-webkit-scrollbar:horizontal {
-  height: 0.8vw;
-}
-
-.reviews-list::-webkit-scrollbar-track {
-  background-color: hsl(182 37% 56% / 0.1);
-}
-
-.reviews-list::-webkit-scrollbar-thumb {
-  background-color: hsla(181, 44%, 78%, 0.295);
-}
-
-.reviews-list::-webkit-scrollbar-thumb:hover {
-  background-color: hsla(181, 62%, 80%, 0.486);
-}
-
-.reviews-item {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  border-radius: 24px;
-  padding: 32px 8px;
-  min-width: 280px;
-  max-width: 335px;
-  width: 100%;
-  background: #fbfbfb;
-  padding: 32px 16px;
-}
-
-.reviews-subtitle-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 8px;
-}
-
-.reviews-item-img {
-  border-radius: 50%;
-}
-
-.reviews-item-subtitle {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: #040306;
-}
-
-.review-item-desc {
-  font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-  color: rgba(4, 3, 6, 0.4);
-}
-
-@media screen and (max-width: 374px) {
-  .reviews-list {
-    min-width: unset;
-  }
-
-  .reviews-item {
-    min-width: unset;
-    width: 100%;
-  }
-}
-
 @media (min-width: 768px) {
   .reviews .container {
     gap: 75px;
@@ -131,46 +47,16 @@
     font-size: 14px;
     line-height: 1.28;
   }
-
-  .reviews-list {
-    max-width: 704px;
-    gap: 32px;
-  }
-
-  .reviews-item {
-    max-width: 336px;
-    padding: 32px 20px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
   .reviews-title {
     max-width: 854px;
   }
-
-  .reviews-list {
-    gap: 26px;
-    max-width: unset;
-    overflow-x: unset;
-  }
-
-  .reviews-item {
-    padding: 32px 28px;
-    max-width: 376px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
   .reviews .container {
     max-width: 1340px;
-  }
-
-  .reviews-list {
-    gap: 32px;
-  }
-
-  .reviews-item {
-    max-width: 392px;
-    padding: 32px 36px;
   }
 }

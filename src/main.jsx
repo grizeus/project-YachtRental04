@@ -1,14 +1,26 @@
-import React from "react";
-import { StrictMode } from "react";
+import React, { lazy, Suspense, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 window.React = React;
 
-import App from "./components/App/App";
+const Carousel = lazy(() => import("./components/Carousel/Carousel"));
+const ReviewsCarousel = lazy(() =>
+  import("./components/ReviewsCarousel/ReviewsCarousel")
+);
 
 import "modern-normalize";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Carousel />
+    </Suspense>
+  </StrictMode>
+);
+
+createRoot(document.getElementById("review-carousel")).render(
+  <StrictMode>
+    <Suspense fallback={<div>Loading...</div>}>
+      <ReviewsCarousel />
+    </Suspense>
   </StrictMode>
 );
