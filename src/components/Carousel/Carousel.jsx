@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
-import { Keyboard, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { useState, useEffect } from "react";
+// import { Keyboard, Pagination } from "swiper/modules";
+import { SwiperSlide } from "swiper/react";
+
+import CustomSwiper from "../CustomSwiper/CustomSwiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -36,32 +38,23 @@ import belleAnnaMob2x from "../../images/our-yachts/belle-anna-mob@2x.jpg";
 
 
 const Carousel = () => {
-  const [queryResolution] = useState(
-    window.matchMedia("(min-width: 1280px) and (max-width: 1439px)")
-  );
-  const [spaceBetween, setSpaceBetween] = useState(32);
+  // const [queryResolution] = useState(
+  //   window.matchMedia("(min-width: 1280px) and (max-width: 1439px)")
+  // );
+  // const [spaceBetween, setSpaceBetween] = useState(32);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setSpaceBetween(queryResolution.matches ? 24 : 32);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [queryResolution]);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setSpaceBetween(queryResolution.matches ? 24 : 32);
+  //   };
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, [queryResolution]);
   
   return (
     <>
-      <Swiper
-        modules={[Pagination, Keyboard]}
-        slidesPerView={"auto"}
-        spaceBetween={spaceBetween}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
-        keyboard={{
-          enabled: true,
-          onlyInViewport: true,
-          pageUpDown: true,
-        }}
-        className={styles["yachts-list"]}
+      <CustomSwiper
+        mainStyle={styles["yachts-list"]} mainGap={32} secGap={24}
       >
         <SwiperSlide className={styles["yachts-item"]}>
           <picture>
@@ -243,8 +236,8 @@ const Carousel = () => {
             </div>
           </div>
         </SwiperSlide>
-        <div className="swiper-pagination"></div>
-      </Swiper>
+        {/* <div className="swiper-pagination"></div> */}
+      </CustomSwiper>
     </>
   );
 };
