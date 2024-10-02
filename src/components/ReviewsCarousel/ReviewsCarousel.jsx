@@ -7,12 +7,12 @@ import "swiper/css/pagination";
 
 import styles from "./ReviewsCarousel.module.css";
 
-import review1 from "../../images/reviews/reviews-image@1x-min.jpg";
-import review1x2 from "../../images/reviews/reviews-image@2x-min.jpg";
-import review2 from "../../images/reviews/reviews-image@1x-1-min.jpg";
-import review2x2 from "../../images/reviews/reviews-image@2x-1-min.jpg";
-import review3 from "../../images/reviews/reviews-image@1x-2-min.jpg";
-import review3x2 from "../../images/reviews/reviews-image@2x-2-min.jpg";
+import review1 from "../../images/reviews/john@1x.jpg";
+import review1x2 from "../../images/reviews/john@2x.jpg";
+import review2 from "../../images/reviews/victoria@1x.jpg";
+import review2x2 from "../../images/reviews/victoria@2x.jpg";
+import review3 from "../../images/reviews/ihor@1x.jpg";
+import review3x2 from "../../images/reviews/ihor@2x.jpg";
 
 const ReviewsCarousel = () => {
   const [queryResolution] = useState(
