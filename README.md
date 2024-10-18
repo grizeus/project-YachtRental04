@@ -34,7 +34,7 @@
 
 1. Clone the repository: 
     ```
-    git clone https://github.com/grizeus/project-YachtRental04
+    git clone https://github.com/grizeus/yacht-rental
     ```
 2. Install dependencies with your preferred package manager and enter development mode:
     ### npm:
