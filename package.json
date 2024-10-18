@@ -1,11 +1,11 @@
 {
-  "name": "project_yachtrental04",
+  "name": "yacht-rental",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-YachtRental04/",
+    "build": "vite build --base=/yacht-rental/",
     "preview": "vite preview"
   },
   "author": "Petro Zaitsev <zaytsewww@gmail.com>",
